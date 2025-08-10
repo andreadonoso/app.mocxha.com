@@ -1,0 +1,662 @@
+import Image from "next/image";
+
+export default function Home() {
+  return (
+    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+      <header>
+        <p>Home</p>
+        <p>Features</p>
+        <p>Pricing</p>
+        <p>About</p>
+        <p>Comparison</p>
+        <p>Start With SEO</p>
+        <p>Request Access</p>
+      </header>
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+        <p>Automate Your Business In One Click</p>
+        <p>Stop Juggling Software.</p>
+        <p>Run Your Entire Business With</p>
+        <p>One AI-Powered Platform</p>
+        <p>TaskForge HQ centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
+        <p>Request a Live Demo</p>
+        <p>***DASHBOARD****</p>
+        <p>One Platform to Rule Them All: Consolidate Your Business Software</p>
+        <p>****LOGOS****</p>
+        <p>One Tool, Every Solution</p>
+        <p>Unify Operations, Amplify Insights with TaskForge HQ & Aida AI</p>
+        <p>
+          ERP - Unified Platform 
+          Streamline operations, manage resources efficiently, and gain complete visibility with a unified data foundation.
+        </p>
+        <p>
+          Accounting & Finance
+          Move beyond basic bookkeeping. Gain real-time financial insights, automate reporting, and make data-driven budget decisions.
+        </p>
+        <p>
+          AI-Powered CRM & Sales
+          Convert more leads, predict customer needs, and accelerate your sales cycle with intelligent automation and personalization.
+        </p>
+        <p>
+          HR & Employee Appraisals
+          Transform appraisals into strategic tools. Analyze performance trends for optimized development decisions.
+        </p>
+        <p>****ANIMATION RIGHT***</p>
+        <p>****ANIMATION LEFT***</p>
+        <p>Powerful Features</p>
+        <p>Optimized for Success</p>
+        <p>Leverage unique capabilities designed for efficiency, control, and insight</p>
+        <p>
+          Aida AI Integration: Embedded intelligence across modules provides predictive insights, task automation, and enhanced decision support.
+        </p>
+        <p>
+          On-Premise Hosting Option: Gain ultimate data sovereignty, security control, and simplified compliance management (Available on Enterprise Plan).
+        </p>
+        <p>
+          Customizable Dashboards: Tailor your view to monitor critical KPIs and gain instant operational awareness.
+        </p>
+        <p>
+          Advanced Reporting & Analytics: Generate in-depth, cross-functional reports to uncover trends and optimize strategy effectively.
+        </p>
+        <p>Wave goodbye to</p>
+        <p>missed deadlines</p>
+        <p>disorganized workflows</p>
+        <p>unnecessary complexity</p>
+        <p>slow progress</p>
+        <p>wasted time</p>
+        <p>slow progress</p>
+        <p>lack of collaboration</p>
+        <p>task overload</p>
+        <p>
+          Streamlined
+          All in One Business Platform
+        </p>
+        <p>
+          10-25%
+          Profitability & Savings Impact
+        </p>
+        <p>
+          40-80%
+          Business Valuation Growth
+        </p>
+        <p>
+          Accelerated
+          Data-Driven Decisions
+        </p>
+        <p>RADS</p>
+        <p>Framework & User Queries</p>
+        <p>
+          Rapid Recognition
+          Instantly Recognize Sales Opportunities
+        </p>
+        <p>
+          Applicable
+          Highly Applicable Inventory Automation
+        </p>
+        <p>
+          Is complex inventory management draining your resources? TaskForge HQ's flexible automation adapts to your unique inventory needs, reducing costs and ensuring optimal stock levels.
+          Author Image
+          Inventory Specialist
+        </p>
+        <p>
+          Struggling with missed sales opportunities? TaskForge HQ's AI-driven insights instantly reveal emerging trends, allowing you to capitalize on opportunities before competitors.
+          Author Image
+          Sales Manager
+        </p>
+        <p>
+          Are project delays and cost overruns impacting your profitability? TaskForge HQ's AI-enhanced project management solutions offer streamlined implementation, significantly improving delivery times and profitability.
+          Author Image
+          Project Coordinator
+        </p>
+        <p>
+          Deployable
+          Rapidly Deployable Marketing Insights
+        </p>
+        <p>
+          Tired of slow, cumbersome marketing reports? TaskForge HQ delivers rapid, pre-built marketing insights, providing immediate data on campaign effectiveness and customer engagement.
+          Author Image
+          Marketing Analyst
+        </p>
+        <p>
+          Solutions
+          AI-Powered Project Solutions, Deployed with Ease
+        </p>
+        <p>Pricing & Plans</p>
+        <p>Affordable Pricing Plans</p>
+        <p>Flexible, transparent pricing to support your team’s productivity and growth at every stage.</p>
+        <p>Billed Monthly ***SWITCH*** Billed yearly</p>
+        <p>
+          Icon
+          Basic
+          Best for personal use 
+          Early Access
+        </p>
+        <p>
+          Unified Platform
+
+          Essential CRM
+
+          Basic Accounting and Finance Management
+
+          Document Management
+
+          Data Analytics
+
+          AI-Powered Automation
+
+          Aida Assisted SMS + Email Campaigns
+        </p>
+        <p>
+          Icon
+          Pro
+          Best for small to mid-sized teams
+          Early Access
+        </p>
+        <p>
+          Everything in Basic +
+
+          Advanced Accounting and Financial Reporting
+
+          Enhanced CRM
+
+          Customizable Industry-Specific App(s)
+
+          Bundle Apps
+
+          3rd Party Integrations
+        </p>
+        <p>
+          Icon
+          Enterprise
+          Get a custom demo and see how Taskforge HQ aligns with your goals.
+          Early Access
+        </p>
+        <p>
+          Everything in Pro +
+
+          Unlimited Apps & Users
+            
+          Lifetime Access
+            
+          Enterprise Integrations
+            
+          On Premise Hosting
+            
+          Security Enhancements & Compliance Tools
+            
+          Dedicated Support
+        </p>
+        <p>
+          Looking for an affordable, customizable, and all in one platform? Then Taskforge HQ may be it.
+        </p>
+        <p>Request Access</p>
+        <p>Free 3 days trial</p>
+        <p>Data migration</p>
+        <p>About Us</p>
+        <p>Our Vision: A Unified Future for Business Operations</p>
+        <p>
+          TaskForge HQ was founded out of frustration with the fragmented software landscape that stifles growth. We saw talented teams hindered by data silos, manual processes, and disconnected tools.  Our mission is to empower businesses with an intelligent, unified operating system.
+        </p>
+        <p>
+          By integrating essential functions and leveraging Aida AI, we enable companies to achieve peak efficiency, unlock critical insights, and scale confidently. We are committed to delivering an intuitive, powerful platform that adapts and evolves with your success.
+        </p>
+        <p>
+          Contact Us
+        </p>
+        <p>
+          Seamless Integration
+          Unified ERP Platform
+        </p>
+        <p>
+          Aida AI Power
+          AI-Powered Automation
+        </p>
+        <p>
+          Data Insights
+          Real-Time Data Analytics
+        </p>
+        <p>
+          Tailored Solutions
+          Industry Adaptability
+        </p>
+        <p>
+          Comparison
+        </p>
+        <p>
+          TaskForge HQ: The Clear Advantage
+        </p>
+        <p>
+          Move beyond the limitations of patching together multiple software solutions.
+        </p>
+        <p>OTHER PLATFORMS</p>
+        <p>
+          Complex, Inefficient Workflows
+
+          Slow, Lagging Progress Tracking
+
+          Clunky, Difficult User Interfaces
+
+          Manual Data Entry & Errors
+
+          Lack of Seamless Integration
+
+          Limited Insights, Reactive Decisions
+
+          Basic, Fragmented Reporting
+
+          Time-Consuming Manual Actions
+
+          Data Security & Control Concerns
+        </p>
+        <p>V/S</p>
+        <p>***MOCXHA LOGO***</p>
+        <p>
+          AI-Driven Workflow Automation Across Functions
+
+          Real-Time Progress Updates & Visibility
+
+          Intuitive, Modern User Experience
+
+          Reduced Manual Work, Enhanced Data Accuracy
+
+          Seamless Integrations & Unified Data Model
+
+          Aida AI-Driven Predictive Insights
+
+          Comprehensive, Customizable Reporting Suite
+
+          Powerful Bulk Action & Automation Capabilities
+
+          Secure On-Premise Hosting Option
+        </p>
+        <p>See the Difference - Request a Demo</p>
+        <p>HQ Overview</p>
+        <p>Key Platform Capabilities: Beyond the Core Modules</p>
+        <p>
+          TaskForge HQ integrates powerful, platform-wide features designed for modern business challenges and optimal performance
+        </p>
+        <p>Get Started</p>
+        <p>
+          Embedded Aida AI
+          Leverage predictive analytics, task automation suggestions, and strategic decision support seamlessly integrated across CRM, Marketing, Finance, and Operations.
+        </p>
+        <p>
+          Seamless Integrations
+          Connect TaskForge HQ with your essential third-party tools (e.g., communication platforms, specialized software) via robust APIs and pre-built connector to maintain a unified workflow.
+        </p>
+        <p>
+          Flexible On-Premise Hosting
+          Gain complete data sovereignty, enhanced security control, and simplified compliance management with our Enterprise-level on-premise deployment option.
+        </p>
+        <p>
+          Industry-Specific Adaptability
+          Utilize customizable modules and configure workflows to precisely match the unique operational demands of your specific industry.
+        </p>
+        <p>
+          Other Interesting Features
+        </p>
+        <p>
+          Seamless Integrations
+                    
+          Enhanced Inventory Management
+
+          Industry-Specific Tools
+
+          Scalable Solutions
+
+          On Premise Hosting
+
+          Real-Time Analytics
+
+          Unified CRM
+
+          Aida AI Automation
+        </p>
+        <p>Unique Features</p>
+        <p>Unleash Taskforge's Unique Potential for you</p>
+        <p>
+          Discover Taskforge’s powerful and unique tools that set it apart, offering unmatched efficiency, customization, and collaboration.
+        </p>
+        <p>Meetings and Collaboration</p>
+        <p>
+          Seamless Collaboration for Effective Meetings
+          Easily schedule and manage meetings, collaborate in real-time, and keep everyone aligned for successful team interactions and faster decision-making.
+        </p>
+        <p>Planning and Tracking</p>
+        <p>
+          Efficient Planning and Real-Time Tracking
+          Plan tasks, set priorities, and track progress with ease to ensure projects stay on track and deadlines are met with minimal effort.
+        </p>
+        <p>Events and Document Sharing</p>
+        <p>
+          Organize Events and Share Documents
+          Effortlessly manage events, share important documents, and collaborate with your team to ensure everything is in one place and easily accessible.
+        </p>
+        <p>
+          How Much Could Your Business Gain with TaskForge HQ’s All-in-One Aida AI Automation and Insights?
+        </p>
+        <p>Industry Insights</p>
+        <p>
+          How Our Integrated Platform Empowers Key Departments
+        </p>
+        <p>Marketing</p>
+        <p>Missing Out on Sales Opportunities?</p>
+        <p>Start 3-day free trial</p>
+        <p>
+          AI-Powered Lead Management
+          TaskForge HQ's AI automates lead nurturing and qualification, streamlining the sales process and maximizing conversion rates.
+        </p>
+        <p>
+          Enhanced Sales Visibility
+          TaskForge HQ provides AI-driven sales forecasting and pipeline analysis, offering clear visibility to optimize sales strategies and drive revenue growth.
+        </p>
+        <p>Management</p>
+        <p>
+          Overwhelmed by Operational Inefficiencies?
+        </p>
+        <p>Start 3-day free trial</p>
+        <p>
+          AI-Driven Workflow Automation
+          TaskForge HQ automates routine tasks and workflows with AI, significantly reducing manual effort and increasing operational efficiency across departments.
+        </p>
+        <p>
+          Unified Data Insights
+          TaskForge HQ provides AI-driven dashboards and reporting, delivering real-time insights from unified data to empower informed decision-making and streamline operations.
+        </p>
+        <p>Sales</p>
+        <p>Struggling with Disconnected Marketing Data?</p>
+        <p>Start 3-day free trial</p>
+        <p>
+          AI-Enhanced Data Unification
+          TaskForge HQ uses AI to unify marketing data, providing a comprehensive view of campaign performance and customer behavior for improved marketing strategies.
+        </p>
+        <p>
+          AI-Driven Actionable Analytics
+          TaskForge HQ's AI-powered analytics deliver actionable insights, optimizing marketing ROI and addressing the challenges of data fragmentation.
+        </p>
+        <p>Projects</p>
+        <p>Projects Falling Behind Schedule?</p>
+        <p>Start 3-day free trial</p>
+        <p>
+          AI-Optimized Project Planning
+          TaskForge HQ enhances project planning with AI-driven resource allocation, timeline optimization, and risk assessment for efficient project execution.
+        </p>
+        <p>
+          AI-Powered Collaboration
+          TaskForge HQ facilitates seamless collaboration with AI-driven communication tools and workflow automation, ensuring projects stay on track and within budget.
+        </p>
+        <p>Inventory</p>
+        <p>Inventory Management Causing Headaches?</p>
+        <p>Start 3-day free trial</p>
+        <p>
+          AI-Powered Inventory Forecasting
+          TaskForge HQ uses AI to optimize inventory levels through predictive forecasting, minimizing stockouts and overstocking to reduce costs.
+        </p>
+        <p>
+          AI-Driven Real-Time Visibility
+          TaskForge HQ provides AI-powered real-time inventory visibility, ensuring accurate data and enabling efficient inventory management to prevent losses.
+        </p>
+        <p>AI-Powered Automation</p>
+        <p>Unified Platform Integration</p>
+        <p>Tailored Business Solutions</p>
+        <p>Security Measures & Compliance</p>
+        <p>Contact</p>
+        <p>Ready to Discuss Your Specific Needs? Let's Connect.</p>
+        <p>
+          Reach out for inquiries, support, or to schedule your personalized demo. Our team is ready to help you explore the power of TaskForge HQ.
+        </p>
+        <p>info@taskforgehq.com</p>
+        <p>Email Us</p>
+        <p>+1 (786)-796-6757</p>
+        <p>Call Us</p>
+        <p>3300 NE 192 St, Aventura, FL 33180</p>
+        <p>Get Direction</p>
+        <p>FAQs</p>
+        <p>What is Taskforge?</p>
+        <p>
+          TaskForge HQ is a comprehensive, all-in-one business management platform powered by Aida AI. It integrates essential functions like ERP, CRM, accounting, project management, marketing automation, HR, and inventory management into a single, unified system. Our goal is to streamline your operations, eliminate data silos, enhance collaboration, and drive significant growth by replacing multiple disconnected software tools.
+        </p>
+        <p>How does TaskForge HQ improve business valuation?</p>
+        <p>
+          TaskForge HQ enhances business valuation through several key factors:
+          Operational Efficiency: Streamlined processes demonstrably reduce overhead and increase profitability metrics attractive to buyers/investors.
+          Scalability: The platform's architecture is built to grow with your business, proving its capacity for future expansion.
+          Data Centralization & Insights: Unified, accessible data allows for sophisticated reporting and strategic decision-making, showcasing strong management capabilities.
+          Data Ownership & Compliance (On-Premise): Full control over data and infrastructure via our optional on-premise hosting meets critical security and compliance needs, increasing value for regulated industries or security-conscious acquirers.
+          Reduced Tech Debt & Transition Time: Consolidating onto one platform simplifies the technology stack, making due diligence and transitions smoother and less costly for potential buyers.
+        </p>
+        <p>Is TaskForge HQ suitable for a wide range of industries?</p>
+        <p>
+          Yes. While offering deep functionality across core business areas common to most companies, TaskForge HQ also includes customizable modules and industry-specific app options (particularly in Pro, Premium, and Enterprise plans). This allows you to tailor workflows, terminology, and reporting to the unique needs of various sectors, including Retail, Manufacturing, Professional Services, Marketing Agencies, Construction, Nonprofits, and more.
+        </p>
+        <p>Can I integrate Taskforge HQ with other tools?</p>
+        <p>
+          Absolutely. We understand that businesses often rely on specific external tools for specialized functions. TaskForge HQ is designed with integration in mind, offering robust API access and pre-built connectors for common third-party applications (availability varies by plan tier). This allows you to maintain a cohesive workflow while leveraging the unified power of TaskForge HQ. Enterprise plans offer bespoke integration development options.
+        </p>
+        <p>Does TaskForge HQ offer AI-driven automation?</p>
+        <p>
+          Aida AI is intelligently woven throughout TaskForge HQ to provide tangible automation and insight advantages, moving beyond basic functionality. Examples include:
+          CRM: Predictive lead scoring, automated follow-up sequences based on engagement, customer sentiment analysis from communications, sales forecasting assistance.
+          Marketing: Automated campaign optimization suggestions, predictive audience segmentation for better targeting, AI-powered content generation assistance, ROI prediction models.
+          Finance: Anomaly detection in transactions, automated reporting summaries and insights, cash flow forecasting assistance.
+          Operations & Projects: Workflow automation recommendations, intelligent resource allocation suggestions, predictive risk identification in projects.
+        </p>
+        <p>How does TaskForge HQ ensure data security and compliance?</p>
+        <p>
+          Data security is foundational to TaskForge HQ. Our platform employs industry-standard security protocols, encryption, and access controls. For organizations requiring the highest level of control, security customization, and adherence to specific regulations (such as GDPR, HIPAA, or others), we strongly recommend our On-Premise Hosting option (available primarily with the Enterprise plan). This deployment model keeps your entire database and application within your own managed infrastructure, providing ultimate data sovereignty and simplifying compliance audits.
+        </p>
+        <p>Can I manage multiple projects simultaneously within TaskForge HQ?</p>
+        <p>
+          Yes, TaskForge HQ includes comprehensive, integrated project management capabilities designed to handle complex workloads. You can effectively plan, execute, monitor, and report on multiple projects concurrently. Features include task management, Gantt charts, resource allocation, time tracking, budget monitoring, and collaborative tools, all linked seamlessly with CRM, finance, and other relevant modules for complete visibility.
+        </p>
+        <p>Does TaskForge HQ offer AI-driven task automation?</p>
+        <p>
+          Yes, TaskForge HQ leverages Aida AI to automate various tasks and workflows. This includes automating data entry, generating reports, managing inventory, and streamlining communication, enhancing overall operational efficiency.
+        </p>
+        <p>Is TaskForge HQ accessible on mobile devices?</p>
+        <p>
+          Yes, TaskForge HQ is designed with a responsive web interface. This means you can access and use the platform effectively through the web browser on your desktop, tablet, or mobile smartphone, allowing you to manage key aspects of your business operations while on the go.
+        </p>
+        <p>What are the key benefits of using TaskForge HQ?</p>
+        <p>
+          The primary strategic benefits reported by our clients include:
+          Radical Unification: Eliminating the cost, complexity, and data silos associated with juggling multiple disparate software tools.
+          Significant Efficiency Gains: Automating repetitive tasks and streamlining cross-departmental workflows.
+          Actionable Business Insight: Gaining deeper, real-time understanding through unified data and AI-powered analytics.
+          Improved Scalability: A flexible platform that grows seamlessly with your company's expansion.
+          Potential Cost Savings: Reducing overall software subscription fees and associated integration costs (Total Cost of Ownership).
+          Enhanced Data Control & Security: Especially potent with the optional On-Premise deployment for maximum sovereignty.
+        </p>
+        <p>
+          Have Questions? We're Here to Help!
+          Reach out to our support team for any queries or assistance.
+        </p>
+        <p>Contact Us</p>
+      </main>
+      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
+        <p>Start your 3-day free trial</p>
+        <p>Start your free trial now to experience seamless project management without any commitment!</p>
+        <p>Enter your email</p>
+        <p>Get Started</p>
+        <p>Logo</p>
+        <p>Simplifying Projects and Achieving Goals.</p>
+        <p>info@taskforgehq.com</p>
+        <p>Home</p>
+        <div>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/file.svg"
+              alt="File icon"
+              width={16}
+              height={16}
+            />
+            Features
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/window.svg"
+              alt="Window icon"
+              width={16}
+              height={16}
+            />
+            Pricing
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            About
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            Comparison
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            Testimonials
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            FAQ's
+          </a>
+        </div>
+        <p>Pages</p>
+        <div>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/file.svg"
+              alt="File icon"
+              width={16}
+              height={16}
+            />
+            Home
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/window.svg"
+              alt="Window icon"
+              width={16}
+              height={16}
+            />
+            Privacy Policy
+          </a>
+        </div>
+        <p>Social</p>
+        <div>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/file.svg"
+              alt="File icon"
+              width={16}
+              height={16}
+            />
+            Linkedin
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/window.svg"
+              alt="Window icon"
+              width={16}
+              height={16}
+            />
+            Twitter / X
+          </a>
+          <a
+            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+            href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Image
+              aria-hidden
+              src="/globe.svg"
+              alt="Globe icon"
+              width={16}
+              height={16}
+            />
+            Instagram
+          </a>
+        </div>
+        <p>© 2025 Taskfroge HQ. All rights reserved.</p>
+        <p>Privacy Policy</p>
+      </footer>
+    </div>
+  );
+}
