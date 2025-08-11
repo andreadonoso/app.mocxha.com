@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <header>
+      <header className="flex">
         <p>Home</p>
         <p>Features</p>
         <p>Pricing</p>
@@ -12,38 +12,46 @@ export default function Home() {
         <p>Start With SEO</p>
         <p>Request Access</p>
       </header>
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
+      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
         <p>Automate Your Business In One Click</p>
-        <p>Stop Juggling Software.</p>
-        <p>Run Your Entire Business With</p>
-        <p>One AI-Powered Platform</p>
+        <h1>Stop Juggling Software.</h1>
+        <h1>Run Your Entire Business With</h1>
+        <h1>One AI-Powered Platform</h1>
         <p>TaskForge HQ centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
         <p>Request a Live Demo</p>
         <p>***DASHBOARD****</p>
         <p>One Platform to Rule Them All: Consolidate Your Business Software</p>
         <p>****LOGOS****</p>
         <p>One Tool, Every Solution</p>
-        <p>Unify Operations, Amplify Insights with TaskForge HQ & Aida AI</p>
-        <p>
+        <h2>Unify Operations, Amplify Insights with TaskForge HQ & Aida AI</h2>
+        <h5>
           ERP - Unified Platform 
+        </h5>
+        <p>
           Streamline operations, manage resources efficiently, and gain complete visibility with a unified data foundation.
         </p>
-        <p>
+        <h5>
           Accounting & Finance
+        </h5>
+        <p>
           Move beyond basic bookkeeping. Gain real-time financial insights, automate reporting, and make data-driven budget decisions.
         </p>
-        <p>
+        <h5>
           AI-Powered CRM & Sales
+        </h5>
+        <p>
           Convert more leads, predict customer needs, and accelerate your sales cycle with intelligent automation and personalization.
         </p>
-        <p>
+        <h5>
           HR & Employee Appraisals
+        </h5>
+        <p>
           Transform appraisals into strategic tools. Analyze performance trends for optimized development decisions.
         </p>
         <p>****ANIMATION RIGHT***</p>
         <p>****ANIMATION LEFT***</p>
         <p>Powerful Features</p>
-        <p>Optimized for Success</p>
+        <h2>Optimized for Success</h2>
         <p>Leverage unique capabilities designed for efficiency, control, and insight</p>
         <p>
           Aida AI Integration: Embedded intelligence across modules provides predictive insights, task automation, and enhanced decision support.
@@ -57,33 +65,41 @@ export default function Home() {
         <p>
           Advanced Reporting & Analytics: Generate in-depth, cross-functional reports to uncover trends and optimize strategy effectively.
         </p>
-        <p>Wave goodbye to</p>
-        <p>missed deadlines</p>
-        <p>disorganized workflows</p>
-        <p>unnecessary complexity</p>
-        <p>slow progress</p>
-        <p>wasted time</p>
-        <p>slow progress</p>
-        <p>lack of collaboration</p>
-        <p>task overload</p>
-        <p>
+        <h2>Wave goodbye to</h2>
+        <h2>missed deadlines</h2>
+        <h2>disorganized workflows</h2>
+        <h2>unnecessary complexity</h2>
+        <h2>slow progress</h2>
+        <h2>wasted time</h2>
+        <h2>slow progress</h2>
+        <h2>lack of collaboration</h2>
+        <h2>task overload</h2>
+        <h4>
           Streamlined
+        </h4>
+        <p>
           All in One Business Platform
         </p>
-        <p>
+        <h4>
           10-25%
+        </h4>
+        <p>
           Profitability & Savings Impact
         </p>
-        <p>
+        <h4>
           40-80%
+        </h4>
+        <p>
           Business Valuation Growth
         </p>
-        <p>
+        <h4>
           Accelerated
+        </h4>
+        <p>
           Data-Driven Decisions
         </p>
         <p>RADS</p>
-        <p>Framework & User Queries</p>
+        <h2>Framework & User Queries</h2>
         <p>
           Rapid Recognition
           Instantly Recognize Sales Opportunities
@@ -121,7 +137,7 @@ export default function Home() {
           AI-Powered Project Solutions, Deployed with Ease
         </p>
         <p>Pricing & Plans</p>
-        <p>Affordable Pricing Plans</p>
+        <h2>Affordable Pricing Plans</h2>
         <p>Flexible, transparent pricing to support your team’s productivity and growth at every stage.</p>
         <p>Billed Monthly ***SWITCH*** Billed yearly</p>
         <p>
@@ -192,7 +208,7 @@ export default function Home() {
         <p>Free 3 days trial</p>
         <p>Data migration</p>
         <p>About Us</p>
-        <p>Our Vision: A Unified Future for Business Operations</p>
+        <h2>Our Vision: A Unified Future for Business Operations</h2>
         <p>
           TaskForge HQ was founded out of frustration with the fragmented software landscape that stifles growth. We saw talented teams hindered by data silos, manual processes, and disconnected tools.  Our mission is to empower businesses with an intelligent, unified operating system.
         </p>
@@ -221,9 +237,9 @@ export default function Home() {
         <p>
           Comparison
         </p>
-        <p>
+        <h2>
           TaskForge HQ: The Clear Advantage
-        </p>
+        </h2>
         <p>
           Move beyond the limitations of patching together multiple software solutions.
         </p>
@@ -270,25 +286,33 @@ export default function Home() {
         </p>
         <p>See the Difference - Request a Demo</p>
         <p>HQ Overview</p>
-        <p>Key Platform Capabilities: Beyond the Core Modules</p>
+        <h2>Key Platform Capabilities: Beyond the Core Modules</h2>
         <p>
           TaskForge HQ integrates powerful, platform-wide features designed for modern business challenges and optimal performance
         </p>
         <p>Get Started</p>
-        <p>
+        <h5>
           Embedded Aida AI
+        </h5>
+        <p>
           Leverage predictive analytics, task automation suggestions, and strategic decision support seamlessly integrated across CRM, Marketing, Finance, and Operations.
         </p>
-        <p>
+        <h5>
           Seamless Integrations
+        </h5>
+        <p>
           Connect TaskForge HQ with your essential third-party tools (e.g., communication platforms, specialized software) via robust APIs and pre-built connector to maintain a unified workflow.
         </p>
-        <p>
+        <h5>
           Flexible On-Premise Hosting
+        </h5>
+        <p>
           Gain complete data sovereignty, enhanced security control, and simplified compliance management with our Enterprise-level on-premise deployment option.
         </p>
-        <p>
+        <h5>
           Industry-Specific Adaptability
+        </h5>
+        <p>
           Utilize customizable modules and configure workflows to precisely match the unique operational demands of your specific industry.
         </p>
         <p>
@@ -312,32 +336,38 @@ export default function Home() {
           Aida AI Automation
         </p>
         <p>Unique Features</p>
-        <p>Unleash Taskforge's Unique Potential for you</p>
+        <h2>Unleash Taskforge's Unique Potential for you</h2>
         <p>
           Discover Taskforge’s powerful and unique tools that set it apart, offering unmatched efficiency, customization, and collaboration.
         </p>
         <p>Meetings and Collaboration</p>
-        <p>
+        <h4>
           Seamless Collaboration for Effective Meetings
+        </h4>
+        <p>
           Easily schedule and manage meetings, collaborate in real-time, and keep everyone aligned for successful team interactions and faster decision-making.
         </p>
         <p>Planning and Tracking</p>
-        <p>
+        <h4>
           Efficient Planning and Real-Time Tracking
+        </h4>
+        <p>
           Plan tasks, set priorities, and track progress with ease to ensure projects stay on track and deadlines are met with minimal effort.
         </p>
         <p>Events and Document Sharing</p>
-        <p>
+        <h4>
           Organize Events and Share Documents
+        </h4>
+        <p>
           Effortlessly manage events, share important documents, and collaborate with your team to ensure everything is in one place and easily accessible.
         </p>
         <p>
           How Much Could Your Business Gain with TaskForge HQ’s All-in-One Aida AI Automation and Insights?
         </p>
         <p>Industry Insights</p>
-        <p>
+        <h2>
           How Our Integrated Platform Empowers Key Departments
-        </p>
+        </h2>
         <p>Marketing</p>
         <p>Missing Out on Sales Opportunities?</p>
         <p>Start 3-day free trial</p>
@@ -400,7 +430,7 @@ export default function Home() {
         <p>Tailored Business Solutions</p>
         <p>Security Measures & Compliance</p>
         <p>Contact</p>
-        <p>Ready to Discuss Your Specific Needs? Let's Connect.</p>
+        <h2>Ready to Discuss Your Specific Needs? Let's Connect.</h2>
         <p>
           Reach out for inquiries, support, or to schedule your personalized demo. Our team is ready to help you explore the power of TaskForge HQ.
         </p>
@@ -411,6 +441,7 @@ export default function Home() {
         <p>3300 NE 192 St, Aventura, FL 33180</p>
         <p>Get Direction</p>
         <p>FAQs</p>
+        <h2>Frequently Asked Questions</h2>
         <p>What is Taskforge?</p>
         <p>
           TaskForge HQ is a comprehensive, all-in-one business management platform powered by Aida AI. It integrates essential functions like ERP, CRM, accounting, project management, marketing automation, HR, and inventory management into a single, unified system. Our goal is to streamline your operations, eliminate data silos, enhance collaboration, and drive significant growth by replacing multiple disconnected software tools.
@@ -473,7 +504,7 @@ export default function Home() {
         <p>Contact Us</p>
       </main>
       <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <p>Start your 3-day free trial</p>
+        <h2>Start your 3-day free trial</h2>
         <p>Start your free trial now to experience seamless project management without any commitment!</p>
         <p>Enter your email</p>
         <p>Get Started</p>

@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+ :root {
+  --background: #f4f2f1;
+  --foreground: #171717;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-switzer);
+} 
+
+@layer base {
+  body {
+    @apply font-sans;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    background: var(--background);
+    color: var(--foreground);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading font-bold;
+  }
+
+  h1 {
+    @apply text-[54px] leading-[120px];
+  }
+
+  h2 {
+    @apply text-[43px] leading-[120px];
+  }
+
+  h4 {
+    @apply text-[21px] leading-[1.4];
+  }
+
+  h5 {
+    @apply text-[20px] leading-[120px];
+  }
+}
