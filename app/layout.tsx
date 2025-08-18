@@ -14,7 +14,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${switzer.variable} `}>
-      <body>{children}</body>
+      <body className="app-canvas" aria-hidden="true">{children}</body>
     </html>
   );
 }
