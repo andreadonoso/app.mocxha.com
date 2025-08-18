@@ -3,6 +3,7 @@
 import { useState } from 'react'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
 import { Bars3Icon } from '@heroicons/react/24/outline'
+import Link from "next/link";
 
 const navigation = [
   { name: 'Home', href: '#' },
@@ -42,32 +43,30 @@ export default function Header() {
                         >
                             {navigation.map((item) => (
                                 <MenuItem key={item.name}>
-                                    <button 
+                                    <a 
                                     href={item.href}
                                     className="group flex w-full items-center gap-2 rounded-lg px-3 py-1.5 data-focus:bg-black/8"
                                     >
                                     {item.name}
                                     <kbd className="ml-auto hidden font-sans text-xs text-black/50 group-data-focus:inline">⌘E</kbd>
-                                    </button>
+                                    </a>
                                 </MenuItem>
                             ))}
                             <MenuItem>
-                                <button 
+                                <a 
                                 href="#"
-                                className="mt-1 w-full rounded-md border border-[#111111] px-3.5 py-2.5 text-sm font-semibold text-[#111111] shadow-xs hover:bg-[#000000]/8 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="block mt-1 text-center w-full rounded-md border border-[#111111] px-3.5 py-2.5 text-sm font-semibold text-[#111111] shadow-xs hover:bg-[#000000]/8 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
-                                Start with SEO
-                                <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-focus:inline">⌘E</kbd>
-                                </button>
+                                    Start with SEO
+                                </a>
                             </MenuItem>
                             <MenuItem >
-                                <button 
+                                <a 
                                 href="#" 
-                                className="mt-1 w-full rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                className="block mt-1 text-center w-full rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                 >
-                                Request access
-                                <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-focus:inline">⌘E</kbd>
-                                </button>
+                                    Request access
+                                </a>
                             </MenuItem>
                         </MenuItems>
                     </Menu>
