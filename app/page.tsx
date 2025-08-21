@@ -8,12 +8,18 @@ export default function Home() {
       <Header/>
       <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-center">
         <p>Automate Your Business In One Click</p>
-        <h1>Stop Juggling Software.</h1>
-        <h1>Run Your Entire Business With</h1>
-        <h1>One AI-Powered Platform</h1>
+        <h1>Stop Juggling Software. Run Your Entire Business With{" "}
+          <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">One AI-Powered Platform</span>
+        </h1>
         <p>Mocxha centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
         <p>Request a Live Demo</p>
-        <p>***DASHBOARD****</p>
+         <Image
+          src="/images/Lp2DrZG63F3x7ngFdocJez29ukk.webp"
+          width={500}
+          height={500}
+          alt="Dashboard"
+          className="rounded-lg"
+        />
         <p>One Platform to Rule Them All: Consolidate Your Business Software</p>
         <p>****LOGOS****</p>
         <p>One Tool, Every Solution</p>
