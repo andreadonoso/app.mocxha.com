@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "@/app/ui/globals.css";
 import { inter, switzer } from "@/app/ui/fonts";
+import Header from "@/app/ui/header";
+import Footer from "@/app/ui/footer";
 
 export const metadata: Metadata = {
   title: "Mocxha",
@@ -14,7 +16,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${inter.variable} ${switzer.variable} `}>
-      <body className="app-canvas" aria-hidden="true">{children}</body>
+      <body className="app-canvas" aria-hidden="true">
+        <Header/>
+        {children}
+        <Footer/>
+      </body>
     </html>
   );
 }

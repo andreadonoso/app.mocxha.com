@@ -9,8 +9,8 @@
 
 
 body{
-    background-image:
-    radial-gradient(60% 60% at 0% 100%, rgba(193,148,255,.45) 0 40%, transparent 60%),
+    background-image:#F1F0EE;
+    /* radial-gradient(60% 60% at 0% 100%, rgba(193,148,255,.45) 0 40%, transparent 60%),
     radial-gradient(60% 60% at 100% 10%, rgba(255,153,122,.45) 0 38%, transparent 62%),
     linear-gradient(130deg,#efeaff 0%, #ffd6e0 33%, #ffd7b3 66%, #e5f0ff 100%),
     repeating-linear-gradient(
@@ -19,7 +19,7 @@ body{
       rgba(255,255,255,var(--stripe-alpha)) 1px,
       rgba(255,255,255,0) 1px,
       rgba(255,255,255,0) var(--stripe-w)
-    );
+    ); */
 
   /* scale/animate only the big gradient layer */
   background-size: auto, auto, 200% 200%, var(--stripe-w) 100%;
@@ -57,21 +57,22 @@ body{
 
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading font-bold;
+    @apply m-0 leading-none p-0; 
   }
 
   h1 {
-    @apply text-[54px] leading-[120px];
+    @apply text-[54px];
   }
 
   h2 {
-    @apply text-[43px] leading-[120px];
+    @apply text-[43px];
   }
 
   h4 {
-    @apply text-[21px] leading-[1.4];
+    @apply text-[21px] ;
   }
 
   h5 {
-    @apply text-[20px] leading-[120px];
+    @apply text-[20px] pb-4;
   }
 }
