@@ -15,7 +15,7 @@ const navigation = [
 
 export default function Header() {
     return (
-        <header className="absolute inset-x-0 top-0 z-50 max-w-7xl mx-auto">
+        <header className="fixed inset-x-0 top-0 z-50 max-w-7xl mx-auto">
             <nav aria-label="Global" className="flex items-center justify-between p-9 xl:px-8">
                 <div className="flex xl:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
@@ -39,7 +39,7 @@ export default function Header() {
                         modal={false}
                         transition
                         anchor="bottom end"
-                        className="w-52 p-2 mt-2 origin-top-right rounded-xl bg-white text-sm/6 text-black transition duration-100 ease-out [--anchor-gap:--spacing(1)] focus:outline-none data-closed:scale-95 data-closed:opacity-0"
+                        className="border border-[#000000]/10 w-52 p-2 mt-2 origin-top-right rounded-xl bg-white text-sm/6 text-black transition duration-100 ease-out [--anchor-gap:--spacing(1)] focus:outline-none data-closed:scale-95 data-closed:opacity-0"
                         >
                             {navigation.map((item) => (
                                 <MenuItem key={item.name}>
