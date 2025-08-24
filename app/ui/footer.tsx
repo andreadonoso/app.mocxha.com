@@ -8,13 +8,34 @@ import { Envelope,
     InstagramLogo
  } from "@phosphor-icons/react";
 
+ const homeLinks = [
+    { name: "Features", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Pricing", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "About", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Comparison", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Testimonials", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "FAQ's", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+]
+
+const pagesLinks = [
+    { name: "Home", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Privacy Policy", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+]
+
+const socialLinks = [
+    { name: "Linkedin", icon: <LinkedinLogo size={24} weight="duotone"/>, address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Twittter / X", icon: <XLogo size={24} weight="duotone"/>, address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Instagram", icon: <InstagramLogo size={24} weight="duotone"/>, address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+]
+
+
 export default function Footer() {
     var email = "";
     return (
         <footer className="row-start-3 w-full bg-[#111111] text-white">
             <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 ">
                 <div className="pt-16 md:pt-20 ">
-                    <div className="flex flex-col items-center justify-center">
+                    <div className="flex flex-col items-center justify-center text-center">
                         <h2>Start your 3-day{" "}
                             <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">
                                 free trial
@@ -30,9 +51,9 @@ export default function Footer() {
                         </form>
                     </div>
                     <hr className="my-6 border-gray-700" />
-                    <div className="flex w-full justify-between py-12">
+                    <div className="flex flex-col md:flex-row w-full justify-between py-12 ">
                         <div className="flex text-[#808080]">
-                            <div className="flex flex-col justify-between">
+                            <div className="flex md:flex-col justify-between flex-row">
                                 <div className="items-center flex">
                                     <img 
                                         alt="Mocxha logo"
@@ -43,117 +64,63 @@ export default function Footer() {
                                     />
                                     <p>Simplifying Projects and Achieving Goals.</p>
                                 </div>
-                                <button className="text-[#808080] border border-[#808080] flex items-center justify-between w-55 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 dark:bg-transparent dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                                    <Envelope/>
+                                <button className=" flex items-center justify-between w-55 px-4 py-3 md:mx-0 mx-4 rounded-lg text-[#808080] border border-[#808080]  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm  dark:bg-transparent dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                    <Envelope size={24} weight="duotone"/>
                                     info@mocxha.com
-                                    <ArrowRight/>
+                                    <ArrowRight size={24}/>
                                 </button>
                             </div>
                         </div>
-                        <div>
-                            <h5>Home</h5>
-                            <div className="text-[#808080] flex flex-col gap-2">
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Features
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Pricing
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    About
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Comparison
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Testimonials
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    FAQ's
-                                </a>
+                        <hr className="my-20 border-gray-700 md:hidden"/>
+                        <div className="flex w-full justify-between md:justify-around">
+                            <div>
+                                <h5>Home</h5>
+                                <div className="text-[#808080]">
+                                    { homeLinks.map((item) => (
+                                        <a 
+                                            key={item.name}
+                                            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                                            href={item.address}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {item.name}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h5>Pages</h5>
-                            <div className="text-[#808080] flex flex-col gap-2">
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Home
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-                                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    Privacy Policy
-                                </a>
+                            <div>
+                                <h5>Pages</h5>
+                                <div className="text-[#808080] flex flex-col gap-2">
+                                    { pagesLinks.map((item) => (
+                                        <a 
+                                            key={item.name}
+                                            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                                            href={item.address}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {item.name}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
-                        </div>
-                        <div>
-                            <h5>Social</h5>
-                            <div className="text-[#808080] flex flex-col gap-2">
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-[#808080]  justify-start bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 dark:bg-[#1E1E1E] dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    href="https://nsextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <LinkedinLogo/>
-                                    Linkedin
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-[#808080] justify-start bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 dark:bg-[#1E1E1E] dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <XLogo                            />
-                                    Twitter / X
-                                </a>
-                                <a
-                                    className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-[#808080] justify-start bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-3 dark:bg-[#1E1E1E] dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-                                    href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <InstagramLogo/>
-                                    Instagram
-                                </a>
+                            <div>
+                                <h5>Social</h5>
+                                <div className="text-[#808080] flex flex-col gap-2">
+                                    { socialLinks.map((item) => (
+                                        <a 
+                                            key={item.name}
+                                            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-[#808080]  justify-start bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-[#1E1E1E] dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                            href={item.address}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                        >
+                                            {item.icon}
+                                            {item.name}
+                                        </a>
+                                    ))}
+                                </div>
                             </div>
                         </div>
                     </div>
