@@ -15,8 +15,8 @@ import FAQs from "@/app/ui/faqs";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-      <main className="max-w-7xl px-4 md:px-6 lg:px-8 overflow-x-hidden">
+    <div className="flex flex-col overflow-x-hidden min-h-screen  mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+      <main className="">
         <Hero/>
         <Solutions/>
         <Features/>
