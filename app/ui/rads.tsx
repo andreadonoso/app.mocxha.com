@@ -5,7 +5,7 @@ import Image from "next/image";
 export default function RADS() {
     return(
         <div className="flex flex-col items-center py-20">
-          <p className=" inline-flex bg-[#ffffff] border border-[#DED8D3]/3  shadow-[0_1px_1px_rgba(0,0,0,0.20),0_8px_20px_rgba(0,0,0,0.05)] rounded-[100] px-2 py-2 my-5">RADS</p>
+          <p className="inline-flex bg-[#ffffff] border border-[#DED8D3]/3  shadow-[0_1px_1px_rgba(0,0,0,0.20),0_8px_20px_rgba(0,0,0,0.05)] rounded-[100] px-2 py-2 my-5">RADS</p>
           <h2>Framework & User Queries</h2>
           <div className="flex flex-col gap-4">
             <div className="flex pt-12 gap-4">
