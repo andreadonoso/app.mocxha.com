@@ -58,7 +58,7 @@ export default function Comparison() {
           <p className="pill bg-black text-white h-full">V/S</p>
           <div>
             <div className="flex flex-col p-10 border rounded-xl gap-2 bg-white">
-              <h5 className="text-center">OTHER PLATFORMS</h5>
+              <h5 className="text-center">MOCXHA</h5>
               {ourPlatform.map((item, i) => (
                 <div key={i} className="flex items-center">
                     <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
