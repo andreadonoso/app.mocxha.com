@@ -1,59 +1,78 @@
 "use client"
 
+import {
+MaskSad,
+Check
+} from "@phosphor-icons/react";
+
+const otherPlatforms = [
+  {description: "Complex, Inefficient Workflows"},
+  {description: "Slow, Lagging Progress Tracking"},
+  {description: "Clunky, Difficult User Interfaces"},
+  {description: "Manual Data Entry & Errors"},
+  {description: "Lack of Seamless Integration"},
+  {description: "Limited Insights, Reactive Decisions"},
+  {description: "Basic, Fragmented Reporting"},
+  {description: "Time-Consuming Manual Actions"},
+  {description: "Data Security & Control Concerns"},
+]
+
+const ourPlatform = [
+  {description: "AI-Driven Workflow Automation Across Functions"},
+  {description: "Real-Time Progress Updates & Visibility"},
+  {description: "Intuitive, Modern User Experience"},
+  {description: "Reduced Manual Work, Enhanced Data Accuracy"},
+  {description: "Seamless Integrations & Unified Data Model"},
+  {description: "Aida AI-Driven Predictive Insights"},
+  {description: "Comprehensive, Customizable Reporting Suite"},
+  {description: "Powerful Bulk Action & Automation Capabilities"},
+  {description: "Secure On-Premise Hosting Option"},
+]
+
 export default function Comparison() {
     return(
-        <>
-        <p>
-          Comparison
-        </p>
-        <h2>
-          Mocxha: The Clear Advantage
-        </h2>
-        <p>
-          Move beyond the limitations of patching together multiple software solutions.
-        </p>
-        <p>OTHER PLATFORMS</p>
-        <p>
-          Complex, Inefficient Workflows
-
-          Slow, Lagging Progress Tracking
-
-          Clunky, Difficult User Interfaces
-
-          Manual Data Entry & Errors
-
-          Lack of Seamless Integration
-
-          Limited Insights, Reactive Decisions
-
-          Basic, Fragmented Reporting
-
-          Time-Consuming Manual Actions
-
-          Data Security & Control Concerns
-        </p>
-        <p>V/S</p>
-        <p>***MOCXHA LOGO***</p>
-        <p>
-          AI-Driven Workflow Automation Across Functions
-
-          Real-Time Progress Updates & Visibility
-
-          Intuitive, Modern User Experience
-
-          Reduced Manual Work, Enhanced Data Accuracy
-
-          Seamless Integrations & Unified Data Model
-
-          Aida AI-Driven Predictive Insights
-
-          Comprehensive, Customizable Reporting Suite
-
-          Powerful Bulk Action & Automation Capabilities
-
-          Secure On-Premise Hosting Option
-        </p>
-        <p>See the Difference - Request a Demo</p>
-        </>
+        <div className="flex flex-col justify-center items-center gap-8">
+          <div className="flex flex-col justify-center items-center">
+          <p className="pill">
+            Comparison
+          </p>
+          <h2>
+            Mocxha: The Clear Advantage
+          </h2>
+          <p>
+            Move beyond the limitations of patching together multiple software solutions.
+          </p>
+        </div>
+        <div className="flex gap-4">
+          <div>
+            <div className="flex flex-col p-10 border rounded-xl gap-2">
+              <h5 className="text-center">OTHER PLATFORMS</h5>
+              {otherPlatforms.map((item, i) => (
+                <div key={i} className="flex items-center">
+                  <MaskSad />
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+          <p className="pill bg-black text-white h-full">V/S</p>
+          <div>
+            <div className="flex flex-col p-10 border rounded-xl gap-2 bg-white">
+              <h5 className="text-center">OTHER PLATFORMS</h5>
+              {ourPlatform.map((item, i) => (
+                <div key={i} className="flex items-center">
+                    <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                      <div className="p3 rounded-md bg-[#000000]">
+                        <Check size={24} color="#ffffff"/>
+                      </div>
+                    </div>
+                  <p>{item.description}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+        <button className="btn btn-primary">See the Difference - Request a Demo</button>
+        </div>
     )
 }
