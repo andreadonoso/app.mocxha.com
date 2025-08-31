@@ -68,17 +68,17 @@ export default function Plans() {
             </div>
             <div className="pb-4 border border-[#dcdbd4] rounded-lg bg-[#E8E4E2]">
               <div className="p-4 border rounded-lg bg-white h-50 flex flex-col justify-between border-black/5">
-              <Image
-                alt="TBD"
-                src="/svgs/En4lEj9XDauBGTWPq8rrDGuUk.svg"
-                width={30}
-                height={30}
-              />
-              <h6>Pro</h6>
-              <p>Best for small to mid-sized teams</p>
-              <button  className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-[#000000] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
-                Early Access
-              </button>
+                <Image
+                  alt="TBD"
+                  src="/svgs/En4lEj9XDauBGTWPq8rrDGuUk.svg"
+                  width={30}
+                  height={30}
+                />
+                <h6>Pro</h6>
+                <p>Best for small to mid-sized teams</p>
+                <button  className="text-white  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-[#000000] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                  Early Access
+                </button>
               </div>
               <div className="px-4 mt-4">
                 {contentPro.map((item, i) => (

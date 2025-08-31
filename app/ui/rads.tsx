@@ -33,7 +33,7 @@ export default function RADS() {
                   height={100}
                 />         
               </div>  
-              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between">
+              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between bg-white">
                 <p>
                   Is complex inventory management draining your resources? Mocxha's flexible automation adapts to your unique inventory needs, reducing costs and ensuring optimal stock levels.
                 </p>
@@ -50,7 +50,7 @@ export default function RADS() {
               </div>  
             </div>
             <div  className="flex gap-4">
-              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between">
+              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between bg-white">
                 <p>
                   Struggling with missed sales opportunities? Mocxha's AI-driven insights instantly reveal emerging trends, allowing you to capitalize on opportunities before competitors.
                 </p>
@@ -65,7 +65,7 @@ export default function RADS() {
                   <p>Sales Manager</p>
                 </div>
               </div>  
-              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between">
+              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between  bg-white">
                 <p>
                   Are project delays and cost overruns impacting your profitability? Mocxha's AI-enhanced project management solutions offer streamlined implementation, significantly improving delivery times and profitability.
                 </p>
@@ -96,7 +96,7 @@ export default function RADS() {
                   height={100}
                 />
               </div>  
-              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between">
+              <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between  bg-white">
                 <p>
                   Tired of slow, cumbersome marketing reports? Mocxha delivers rapid, pre-built marketing insights, providing immediate data on campaign effectiveness and customer engagement.
                 </p>

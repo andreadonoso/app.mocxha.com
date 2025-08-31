@@ -6,36 +6,8 @@
   --stripe-alpha: .10;
 }
 
-
-
 body{
-    background-image:#F6F5F4;
-    /* radial-gradient(60% 60% at 0% 100%, rgba(193,148,255,.45) 0 40%, transparent 60%),
-    radial-gradient(60% 60% at 100% 10%, rgba(255,153,122,.45) 0 38%, transparent 62%),
-    linear-gradient(130deg,#efeaff 0%, #ffd6e0 33%, #ffd7b3 66%, #e5f0ff 100%),
-    repeating-linear-gradient(
-      to right,
-      rgba(255,255,255,var(--stripe-alpha)) 0,
-      rgba(255,255,255,var(--stripe-alpha)) 1px,
-      rgba(255,255,255,0) 1px,
-      rgba(255,255,255,0) var(--stripe-w)
-    ); */
-
-  /* scale/animate only the big gradient layer */
-  background-size: auto, auto, 200% 200%, var(--stripe-w) 100%;
-  background-position: 0 0, 0 0, 0% 0%, 0 0;
-  background-attachment: fixed, fixed, fixed, fixed;
-  animation: panBody 28s ease-in-out infinite alternate;
-}
-
-@keyframes panBody{
-  from { background-position: 0 0, 0 0, 0% 0%, 0 0; }
-  to   { background-position: 0 0, 0 0, 100% 100%, 0 0; }
-}
-
-/* If the user prefers less motion */
-@media (prefers-reduced-motion: reduce){
-  body{ animation:none; }
+    background-color:#f4f2f1;
 }
 
 @theme inline {
