@@ -31,7 +31,7 @@ const ourPlatform = [
 
 export default function Comparison() {
     return(
-        <div className="flex flex-col justify-center items-center gap-8">
+        <div className="flex flex-col justify-center items-center gap-8 py-20">
           <div className="flex flex-col justify-center items-center">
           <p className="pill">
             Comparison
