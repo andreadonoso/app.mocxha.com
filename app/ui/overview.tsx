@@ -5,7 +5,6 @@ import {
   UserCirclePlus,
   Timer,
   Tag,
-
  } from "@phosphor-icons/react";
 
  import Marquee from "react-fast-marquee";
