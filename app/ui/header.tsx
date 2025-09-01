@@ -16,7 +16,7 @@ const navigation = [
 export default function Header() {
     return (
         <header className="fixed inset-x-0 top-0 z-50 max-w-7xl mx-auto">
-            <nav aria-label="Global" className="flex items-center justify-between p-9 xl:px-8">
+            <nav aria-label="Global" className="flex items-center justify-between mt-4 py-4 px-6 xl:px-6 bg-white rounded-2xl">
                 <div className="flex xl:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Mocxha</span>
