@@ -31,57 +31,60 @@ const features = [
 export default function Overview() {
     return(
         <div className="flex flex-col justify-center items-center py-20 gap-10 md:justify-between bg-[#111111] text-white">
-          <div className="flex flex-col justify-center items-center gap-4">
-            <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-              <p className="pill m-0 bg-black">HQ Overview</p>
-            </div>
-            <h2>Key Platform Capabilities: Beyond the Core Modules</h2>
-            <p>
-              Mocxha integrates powerful, platform-wide features designed for modern business challenges and optimal performance
-            </p>
-            <button className="btn btn-secondary">Get Started</button>
-            <div className="relative">
-              <div className="p-1 my-8 mx-12 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+          <div className="mx-auto max-w-7xl">
+            <div className="flex flex-col justify-center items-center gap-4">
+              <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                <p className="pill m-0 bg-black">HQ Overview</p>
+              </div>
+              <h2>Key Platform Capabilities: Beyond the Core Modules</h2>
+              <p>
+                Mocxha integrates powerful, platform-wide features designed for modern business challenges and optimal performance
+              </p>
+              <button className="btn btn-secondary">Get Started</button>
+              <div className="relative">
+                <div className="p-1 my-8 mx-12 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                  <img
+                    src="/1ERyzT95gIbmR9MufL5vBXNUzc.webp"
+                    alt="Dashboard"
+                    className="rounded-lg block w-full h-auto "
+                  />
+                </div>
                 <img
-                  src="/1ERyzT95gIbmR9MufL5vBXNUzc.webp"
+                  src="/1SsjIie9Tpxei9scsPnNHYSLGM.avif"
                   alt="Dashboard"
-                  className="rounded-lg block w-full h-auto "
+                  className="block absolute w-50 h-50 left-1 top-60 rotate-3"
+                />
+                <img
+                  src="/FJyp3zx5MUI0IcTijk6OdSPVh8.avif"
+                  alt="Dashboard"
+                  className="block absolute w-50 h-50 right-1 top-75 rotate-357"
                 />
               </div>
-              <img
-                src="/1SsjIie9Tpxei9scsPnNHYSLGM.avif"
-                alt="Dashboard"
-                className="block absolute w-50 h-50 left-1 top-60 rotate-3"
-              />
-              <img
-                src="/FJyp3zx5MUI0IcTijk6OdSPVh8.avif"
-                alt="Dashboard"
-                className="block absolute w-50 h-50 right-1 top-75 rotate-357"
-              />
             </div>
-          </div>
-          <div className="flex">
-            {items.map((item, i) => (
-              <div key={i}>
-                {item.icon}
-                <h5>{item.title}</h5>
-                <p>{item.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-              <p className="pill m-0 bg-black">Other Interesting Features</p>
-          </div>
-          <div
-          className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-            <Marquee>
-              {features.map((item, i) => (
-                <div key={i} className="flex items-center justify-center m-2 p-4 rounded-lg bg-[#1e1e1e] text-white" >
-                  <div className="w-2 h-2 mr-3 rounded-full" style={{ backgroundColor: item.color }}></div>
-                  <p>{item.name}</p>
+            <div className="flex">
+              {items.map((item, i) => (
+                <div key={i} className="p-8">
+                  {item.icon}
+                  <h5>{item.title}</h5>
+                  <p>{item.description}</p>
                 </div>
               ))}
-            </Marquee>
+            </div>
+            <div className="flex flex-col justify-center items-center gap-4">
+              <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                  <p className="pill m-0 bg-black">Other Interesting Features</p>
+              </div>
+              <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
+                <Marquee>
+                  {features.map((item, i) => (
+                    <div key={i} className="flex items-center justify-center m-2 p-4 rounded-lg bg-[#1e1e1e] text-white" >
+                      <div className="w-2 h-2 mr-3 rounded-full" style={{ backgroundColor: item.color }}></div>
+                      <p>{item.name}</p>
+                    </div>
+                  ))}
+                </Marquee>
+              </div>
+            </div>
           </div>
         </div>
     )

@@ -15,21 +15,25 @@ import FAQs from "@/app/ui/faqs";
 
 export default function Home() {
   return (
-    <div className="flex flex-col overflow-x-hidden min-h-screen  mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-      <main className="">
-        <Hero/>
-        <Solutions/>
-        <Features/>
-        <ValueProposition/>
-        <RADS/>
-        <Plans/>
-        <About/>
-        <Comparison/>
+    <div>
+      <main className="flex flex-col overflow-x-hidden min-h-screen ">
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+          <Hero/>
+          <Solutions/>
+          <Features/>
+          <ValueProposition/>
+          <RADS/>
+          <Plans/>
+          <About/>
+          <Comparison/>
+        </div>
         <Overview/>
-        <Differentiator/>
-        <Insights/>
-        <Contact/>
-        <FAQs/>
+        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+          <Differentiator/>
+          <Insights/>
+          <Contact/>
+          <FAQs/>
+        </div>
       </main>
     </div>
   );
