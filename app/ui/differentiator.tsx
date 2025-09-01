@@ -37,6 +37,7 @@ export default function Differentiator() {
                     <p className="text-[#4C4C4C] text-lg">{item.description}</p>
                   </div>
                   <Image
+                  alt="TBD"
                     src={item.source}
                     width={500} 
                     height={500}
