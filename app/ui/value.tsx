@@ -11,7 +11,7 @@ const features = [
 export default function ValueProposition() {
     return(
         <div className="py-20">
-          <div className="flex pb-12 justify-between">
+          <div className="flex-col sm:flex-rowpb-12 justify-between">
             <h2> <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">Wave goodbye to</span></h2>
             <div>
               <h2>missed deadlines</h2>
@@ -24,7 +24,7 @@ export default function ValueProposition() {
               <h2>task overload</h2>
             </div>  
           </div>
-          <div className="flex justify-between">
+          <div className="flex flex-col sm:flex-row justify-between">
             {features.map((item, i) => (
               <div key={i} className="flex flex-col items-center justify-center text-center">
                 <div className="p-0.5 mr-4 rounded-full bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">

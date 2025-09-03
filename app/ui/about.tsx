@@ -44,7 +44,7 @@ export default function About() {
                 />
             </div>
           </div>
-          <div className="flex justify-between gap-4">
+          <div className="flex flex-col sm:flex-row justify-between gap-4">
             {items.map((item, i) => (
               <div key={i} className="flex flex-col justify-center items-center border border-[#dcdbd4] bg-[#E8E4E2] rounded-xl py-8 w-full">
                 <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">

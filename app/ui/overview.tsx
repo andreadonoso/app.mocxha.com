@@ -51,12 +51,12 @@ export default function Overview() {
                 <img
                   src="/1SsjIie9Tpxei9scsPnNHYSLGM.avif"
                   alt="Dashboard"
-                  className="block absolute w-50 h-50 left-1 top-60 rotate-3"
+                  className="block absolute md:w-50 md:h-50 w-25 h-25 left-1 md:top-60 top-20 rotate-3"
                 />
                 <img
                   src="/FJyp3zx5MUI0IcTijk6OdSPVh8.avif"
                   alt="Dashboard"
-                  className="block absolute w-50 h-50 right-1 top-75 rotate-357"
+                  className="block absolute md:w-50 md:h-50 w-25 h-25 right-1 md:top-75 top-30 rotate-357"
                 />
               </div>
             </div>

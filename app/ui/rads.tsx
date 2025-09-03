@@ -8,7 +8,7 @@ export default function RADS() {
           <p className="inline-flex bg-[#ffffff] border border-[#DED8D3]/3  shadow-[0_1px_1px_rgba(0,0,0,0.20),0_8px_20px_rgba(0,0,0,0.05)] rounded-[100] px-2 py-2 my-5">RADS</p>
           <h2>Framework & User Queries</h2>
           <div className="flex flex-col gap-4">
-            <div className="flex pt-12 gap-4">
+            <div className="flex flex-col sm:flex-row pt-12 gap-4">
               <div className="border p-8 rounded-lg border-[#FAD6B7] bg-[#FDF1E7] flex flex-col justify-between">
                 <h4>
                   Rapid Recognition
@@ -49,7 +49,7 @@ export default function RADS() {
                 </div>
               </div>  
             </div>
-            <div  className="flex gap-4">
+            <div  className="flex flex-col sm:flex-row gap-4">
               <div className="border p-8 rounded-lg border-[#f1f0ee] flex flex-col justify-between bg-white">
                 <p>
                   Struggling with missed sales opportunities? Mocxha's AI-driven insights instantly reveal emerging trends, allowing you to capitalize on opportunities before competitors.
@@ -81,7 +81,7 @@ export default function RADS() {
                 </div>
               </div>  
             </div>
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <div className="border p-8 rounded-lg border-[#D3E4C4] bg-[#F1FDE7] flex flex-col justify-between">
                 <h4>
                   Deployable

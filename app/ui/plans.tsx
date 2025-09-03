@@ -42,7 +42,7 @@ export default function Plans() {
               30% OFF
             </span>
           </p>
-          <div className="flex gap-4">
+          <div className="flex flex-col sm:flex-row gap-4">
             <div className="pb-4 border border-[#dcdbd4] rounded-lg bg-[#E8E4E2]">
               <div className="p-4 border rounded-lg bg-white h-50 flex flex-col justify-between border-black/5">
                 <Image
@@ -114,11 +114,11 @@ export default function Plans() {
               </div>
             </div>
           </div>
-          <div className="flex bg-[#E8E4E2] items-center justify-between  rounded-lg p-3 w-full my-8">
+          <div className="flex flex-col sm:flex-row bg-[#E8E4E2] items-center justify-between  rounded-lg p-3 w-full my-8">
             <p>
               Looking for an affordable, customizable, and all in one platform? <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit"> Then Mocxha may be it. </span>
             </p>
-            <button  className="text-black bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-[#ffffff] dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+            <button  className="btn btn-secondary">
               Request Access
             </button>
           </div>
