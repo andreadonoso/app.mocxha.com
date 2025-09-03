@@ -16,7 +16,6 @@ import FAQs from "@/app/ui/faqs";
 export default function Home() {
   return (
     <div>
-      {/* <main className="flex flex-col overflow-x-hidden min-h-screen"> */}
       <main className="flex flex-col min-h-screen">
         <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
           <Hero/>
