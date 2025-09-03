@@ -63,9 +63,9 @@ body{
   }
 
   .btn-primary {
-    @apply text-white bg-blue-700 hover:bg-blue-800
+    @apply text-white bg-blue-700 hover:bg-[#3D3D3D]
            focus:ring-4 focus:ring-blue-300
-           dark:bg-black dark:hover:bg-blue-700 dark:focus:ring-blue-800;
+           dark:bg-black dark:hover:bg-[#3D3D3D] dark:focus:ring-blue-800;
   }
 
    .btn-secondary {
