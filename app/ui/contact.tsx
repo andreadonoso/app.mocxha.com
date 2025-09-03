@@ -17,12 +17,12 @@ export default function Contact() {
               Reach out for inquiries, support, or to schedule your personalized demo. Our team is ready to help you explore the power of Mocxha.
             </p>
             {items.map((item, i) => (
-              <div key={i} className="flex items-center gap-4 bg-[#E8E4E2] rounded-lg p-3 justify-between">
+              <div key={i} className="flex flex-col sm:flex-row items-center gap-4 bg-[#E8E4E2] rounded-lg p-3 justify-between">
                 <div className="flex gap-4">
                   {item.icon}
                   <p>{item.description}</p>
                 </div>
-                <button className="btn btn-primary w-40">{item.action}</button>
+                <button className="btn btn-primary sm:w-40 w-full">{item.action}</button>
               </div>
             ))}
           </div>

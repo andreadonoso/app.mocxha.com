@@ -17,7 +17,7 @@ export default function Solutions() {
               <h2>Unify Operations, Amplify Insights with Mocxha & Aida AI</h2>
             </div>
             <div className="flex text-start">
-              <div className="flex py-8 ">
+              <div className="flex flex-col sm:flex-row py-8 ">
                 <div className="flex flex-col gap-2 pr-8">
                   <div>
                     <TreeStructure size={32} color="#FF2F2F" weight="duotone"/>
@@ -62,7 +62,7 @@ export default function Solutions() {
             </div>
           </div>
           <div className="flex flex-col justify-center items-center h-">
-            <div className="w-100 h-100 rounded-xl bg-[#ffffff] border border-[#000000]/5 relative shadow-[0_1px_1px_rgba(0,0,0,0.04),0_10px_30px_rgba(0,0,0,0.10)]
+            <div className="w-80 h-80 rounded-xl bg-[#ffffff] border border-[#000000]/5 relative shadow-[0_1px_1px_rgba(0,0,0,0.04),0_10px_30px_rgba(0,0,0,0.10)]
                 overflow-hidden">
               <Image
                 alt="TBD"

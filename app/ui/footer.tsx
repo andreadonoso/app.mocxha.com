@@ -53,7 +53,7 @@ export default function Footer() {
                     <hr className="my-6 border-gray-700" />
                     <div className="flex flex-col md:flex-row w-full justify-between py-12 ">
                         <div className="flex text-[#808080]">
-                            <div className="flex md:flex-col justify-between flex-row">
+                            <div className="flex md:flex-row justify-between flex-col">
                                 <div className="items-center flex">
                                     <img 
                                         alt="Mocxha logo"

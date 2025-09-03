@@ -43,7 +43,7 @@ export default function Comparison() {
             Move beyond the limitations of patching together multiple software solutions.
           </p>
         </div>
-        <div className="flex gap-4">
+        <div className="flex flex-col sm:flex-row gap-4">
           <div>
             <div className="flex flex-col p-10 border border-[#ded8d3] bg-[#e8e4e2] rounded-xl gap-2">
               <h5 className="text-center">OTHER PLATFORMS</h5>
