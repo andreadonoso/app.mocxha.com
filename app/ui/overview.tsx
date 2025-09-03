@@ -75,7 +75,7 @@ export default function Overview() {
               </div>
              
                 <Marquee
-                  autofill
+                  autoFill
                   pauseOnClick
                   className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
                 >
