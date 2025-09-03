@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
         <p className="text=[#111111] my-8">One Platform to Rule Them All: Consolidate Your Business Software</p>
         <Marquee
-          autofill
+          autoFill
           pauseOnClick
           className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
         >
