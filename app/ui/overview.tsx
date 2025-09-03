@@ -31,7 +31,7 @@ export default function Overview() {
     return(
         <div className="flex flex-col justify-center items-center py-20 gap-10 md:justify-between bg-[#111111] text-white">
           <div className="mx-auto max-w-7xl">
-            <div className="flex flex-col justify-center items-center gap-4">
+            <div className="flex flex-col justify-center items-center gap-4 text-center">
               <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                 <p className="pill m-0 bg-black">HQ Overview</p>
               </div>
@@ -40,7 +40,7 @@ export default function Overview() {
                 Mocxha integrates powerful, platform-wide features designed for modern business challenges and optimal performance
               </p>
               <button className="btn btn-secondary">Get Started</button>
-              <div className="relative">
+              <div className="relative mx-6">
                 <div className="p-1 my-8 mx-12 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                   <img
                     src="/1ERyzT95gIbmR9MufL5vBXNUzc.webp"
@@ -60,7 +60,7 @@ export default function Overview() {
                 />
               </div>
             </div>
-            <div className="flex">
+            <div className="md:flex-row flex flex-col">
               {items.map((item, i) => (
                 <div key={i} className="p-8">
                   {item.icon}
@@ -73,8 +73,12 @@ export default function Overview() {
               <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                   <p className="pill m-0 bg-black">Other Interesting Features</p>
               </div>
-              <div className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-                <Marquee>
+             
+                <Marquee
+                  autofill
+                  pauseOnClick
+                  className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                >
                   {features.map((item, i) => (
                     <div key={i} className="flex items-center justify-center m-2 p-4 rounded-lg bg-[#1e1e1e] text-white" >
                       <div className="w-2 h-2 mr-3 rounded-full" style={{ backgroundColor: item.color }}></div>
@@ -82,7 +86,7 @@ export default function Overview() {
                     </div>
                   ))}
                 </Marquee>
-              </div>
+              
             </div>
           </div>
         </div>

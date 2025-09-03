@@ -32,10 +32,10 @@ export default function Insights() {
               How Our Integrated Platform Empowers Key Departments
             </h2>
           </div>
-          <div className="bg-white rounded-xl flex flex-col m-16 p-4">
-            <div className="flex justify-between gap-2 pb-4">
+          <div className="bg-white rounded-xl flex flex-col p-4 m-4">
+            <div className="flex flex-col lg:flex-row justify-between gap-2 pb-4">
               {items.map((item, i) => (
-                <div key={i} className="flex-1 pt-0.5 px-0.5 pb-0 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                <div key={i} className="lg:flex-1 pt-0.5 px-0.5 pb-0 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                   <div className="items-center p-5 flex gap-2 rounded-lg justify-center bg-white">
                     {item.icon}
                     <h4>{item.name}</h4>
@@ -44,12 +44,12 @@ export default function Insights() {
               ))}
             </div>
             {items.map((item, i) => (
-              <div key={i} className="flex px-12 py-12 justify-between gap-16">
-                <div className="flex flex-col gap-8 items-start w-100">
+              <div key={i} className="flex flex-col lg:flex-row lg:px-12 py-12 justify-between gap-16">
+                <div className="flex flex-col gap-8 items-start">
                   <h4>{item.question}</h4>
                   <button className="btn btn-tertiary">Start 3-day free trial</button>
                 </div>
-                <div className="flex flex-col gap-4 w-140">
+                <div className="flex flex-col gap-4">
                   <h4>{item.title1}</h4>
                   <p className="text-[#808080]">{item.description1}</p>
                   <hr className="border-[#F1F0EE] my-8"/>
@@ -59,17 +59,19 @@ export default function Insights() {
               </div>
             ))}
           </div>
-          <div className="flex gap-2 justify-between items-center">
-            {features.map((item, i) => (
-              <div key={i} className="flex">
-                <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                  <div className="p3 rounded-md bg-[#000000]">
-                    <Check size={24} color="#ffffff"/>
+          <div className="flex flex-col lg:flex-row  lg:justify-between items-center">
+            <div className="flex flex-col lg:flex-row  lg:justify-between gap-2">
+              {features.map((item, i) => (
+                <div key={i} className="flex">
+                  <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                    <div className="p3 rounded-md bg-[#000000]">
+                      <Check size={24} color="#ffffff"/>
+                    </div>
                   </div>
+                  <p>{item.description}</p>
                 </div>
-                <p>{item.description}</p>
-              </div>
-            ))}
+              ))}
+            </div>
           </div>
         </div>
     )
