@@ -10,7 +10,7 @@ import { TreeStructure,
 
 export default function Solutions() {
     return(
-        <div className="flex flex-col justify-center items-center py-20 gap-10 md:flex-row md:justify-between">
+        <div className="flex flex-col justify-center items-center py-20 gap-10 lg:flex-row md:justify-between">
           <div className="p-10">
             <div className="text-center md:text-start">
               <p className=" inline-flex bg-[#ffffff] border border-[#DED8D3]/3  shadow-[0_1px_1px_rgba(0,0,0,0.20),0_8px_20px_rgba(0,0,0,0.05)] rounded-[100] px-2 py-2 my-5">One Tool, Every Solution</p>

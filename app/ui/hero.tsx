@@ -19,17 +19,16 @@ const logos = [
   { name: "Asana", source:"/images/logos/cRVNxqFEGuIxm62gjiAmhXNvks.avif" },
 ];
 
-const duplicatedLogos = [...logos, ...logos, ...logos];
 
 export default function Hero() {
     return(
       <div className="flex flex-col py-25 md:py-30 items-center justify-center text-center">
-        <p className="border bg-[#ffffff]/20 border-[#DED8D3] rounded-[100] px-3 py-1 mt-10">Automate Your Business In One Click</p>
+        <p className="pill-hero">Automate Your Business In One Click</p>
         <h1 className="pt-8 pb-4">Stop Juggling Software. Run Your Entire Business With{" "}
           <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">One AI-Powered Platform</span>
         </h1>
         <p className="text-[#3D3D3D]">Mocxha centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
-        <button  className="text-white  mt-8 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-[#000000] dark:hover:bg-blue-700 dark:focus:ring-blue-800">Request a Live Demo</button>
+        <button  className="btn btn-primary mt-8">Request a Live Demo</button>
         <div className="p-1 my-8 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
           <img
             src="/images/Lp2DrZG63F3x7ngFdocJez29ukk.jpg"
@@ -38,22 +37,23 @@ export default function Hero() {
           />
         </div>
         <p className="text=[#111111] my-8">One Platform to Rule Them All: Consolidate Your Business Software</p>
-        <div
-          className="w-full inline-flex flex-nowrap overflow-hidden [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]">
-              <Marquee>
-                { duplicatedLogos.map((logo, i) => (
-                  <div key={i} className="mx-8  shrink-0">
-                    <Image
-                      alt={logo.name}
-                      src={logo.source}
-                      width={140} 
-                      height={35}
-                      className="object-contain w-auto h-[35px] max-w-none"
-                    />
-                  </div>
-                )) }
-              </Marquee>
-        </div>
+        <Marquee
+          autofill
+          pauseOnClick
+          className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+        >
+          { logos.map((logo, i) => (
+            <div key={i} className="mx-8">
+              <Image
+                alt={logo.name}
+                src={logo.source}
+                width={140} 
+                height={35}
+                className="object-contain w-auto h-[35px] max-w-none"
+              />
+            </div>
+          )) }
+        </Marquee>
       </div>
     )
 }

@@ -9,8 +9,8 @@ const items = [
 
 export default function Contact() {
     return(
-        <div className="py-20 flex gap-8">
-          <div className=" flex flex-col gap-4">
+        <div className="py-20 flex flex-col md:flex-row gap-8">
+          <div className="flex flex-col gap-4">
             <p className="pill">Contact</p>
             <h2>Ready to Discuss Your Specific Needs? Let's Connect.</h2>
             <p>
@@ -26,7 +26,7 @@ export default function Contact() {
               </div>
             ))}
           </div>
-          <div className="bg-[#111111] text-white p-4 w-200">
+          <div className="bg-[#111111] text-white p-4 flex-1">
             <h5>30 Min Meeting - Moxcha</h5>
             <p>A quick demo to see if we are the right fit for eachother</p>
             <p>... embed api here...</p>

@@ -17,7 +17,7 @@ const items = [
 export default function About() {
     return(
         <div className="flex flex-col py-20 gap-10 bg-[#f4f2f1]">
-          <div className="flex bg-white rounded-lg p-10">
+          <div className="md:flex bg-white rounded-lg p-10">
             <div>
               <p className="pill">About Us</p>
               <h2>Our Vision: A Unified Future for Business Operations</h2>
@@ -33,16 +33,15 @@ export default function About() {
                 </button>
               </div>
             </div>
-            <div>
+            <div >
               <iframe
-                  width="560"
-                  height="315"
                   src="https://www.youtube.com/embed/Y8EVadQqJaY"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                ></iframe>
+                  className="w-full"
+                />
             </div>
           </div>
           <div className="flex justify-between gap-4">
