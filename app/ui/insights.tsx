@@ -35,8 +35,8 @@ export default function Insights() {
           <div className="bg-white rounded-xl flex flex-col m-16 p-4">
             <div className="flex justify-between gap-2 pb-4">
               {items.map((item, i) => (
-                <div className="flex-1 pt-0.5 px-0.5 pb-0 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                  <div key={i} className="items-center p-5 flex gap-2 rounded-lg justify-center bg-white">
+                <div key={i} className="flex-1 pt-0.5 px-0.5 pb-0 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                  <div className="items-center p-5 flex gap-2 rounded-lg justify-center bg-white">
                     {item.icon}
                     <h4>{item.name}</h4>
                   </div>
@@ -61,7 +61,7 @@ export default function Insights() {
           </div>
           <div className="flex gap-2 justify-between items-center">
             {features.map((item, i) => (
-              <div className="flex">
+              <div key={i} className="flex">
                 <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                   <div className="p3 rounded-md bg-[#000000]">
                     <Check size={24} color="#ffffff"/>
