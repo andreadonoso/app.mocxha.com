@@ -28,7 +28,7 @@ export default function Hero() {
           <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">One AI-Powered Platform</span>
         </h1>
         <p className="text-[#3D3D3D]">Mocxha centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
-        <button  className="btn btn-primary mt-8">Request a Live Demo</button>
+        <a  href="#contact" className="a btn btn-primary mt-8">Request a Live Demo</a>
         <div className="p-1 my-8 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
           <img
             src="/images/Lp2DrZG63F3x7ngFdocJez29ukk.jpg"

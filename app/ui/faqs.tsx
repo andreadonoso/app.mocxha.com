@@ -45,7 +45,7 @@ export default function FAQs() {
                         Reach out to our support team for any queries or assistance.
                     </p>
                 </div>
-                <button className="btn btn-primary">Contact Us</button>
+                <a href="#contact"  className="btn btn-primary">Contact Us</a>
             </div>
         </div>
     )

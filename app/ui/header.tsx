@@ -7,10 +7,10 @@ import Link from "next/link";
 
 const navigation = [
   { name: 'Home', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Pricing', href: '#' },
-  { name: 'About', href: '#' },
-  { name: 'Comparison', href: '#' },
+  { name: 'Features', href: '#features' },
+  { name: 'Pricing', href: '#pricing' },
+  { name: 'About', href: '#about' },
+  { name: 'Comparison', href: '#comparison' },
 ]
 
 export default function Header() {
@@ -94,7 +94,7 @@ export default function Header() {
                                 ))}
                                 <MenuItem >
                                     <a 
-                                    href="#" 
+                                    href="#contact" 
                                     className="block mt-1 text-center w-full rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
                                     >
                                         Request access
@@ -113,7 +113,7 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden xl:flex xl:flex-1 xl:justify-end  xl:gap-x-2">
-                    <a href="#" className="rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    <a href="#contact" className="rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
                     Request access
                     </a>
                 </div>

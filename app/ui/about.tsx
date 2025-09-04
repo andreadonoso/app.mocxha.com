@@ -16,7 +16,7 @@ const items = [
 
 export default function About() {
     return(
-        <div className="flex flex-col py-20 gap-10 bg-[#f4f2f1]">
+        <div id="about" className="flex flex-col py-20 gap-10 bg-[#f4f2f1]">
           <div className="md:flex bg-white rounded-lg p-10">
             <div>
               <p className="pill">About Us</p>
@@ -28,9 +28,9 @@ export default function About() {
                 <p>
                   By integrating essential functions and leveraging Aida AI, we enable companies to achieve peak efficiency, unlock critical insights, and scale confidently. We are committed to delivering an intuitive, powerful platform that adapts and evolves with your success.
                 </p>
-                <button className="btn btn-primary">
+                <a href="#contact" className="btn btn-primary">
                     Contact Us
-                </button>
+                </a>
               </div>
             </div>
             <div >
