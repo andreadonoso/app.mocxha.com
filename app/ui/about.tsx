@@ -16,7 +16,7 @@ const items = [
 
 export default function About() {
     return(
-        <div className="flex flex-col py-20 gap-10 bg-[#f4f2f1]">
+        <div id="about" className="flex flex-col py-20 gap-10 bg-[#f4f2f1]">
           <div className="md:flex bg-white rounded-lg p-10">
             <div>
               <p className="pill">About Us</p>
