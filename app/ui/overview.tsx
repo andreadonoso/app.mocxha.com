@@ -39,7 +39,7 @@ export default function Overview() {
               <p>
                 Mocxha integrates powerful, platform-wide features designed for modern business challenges and optimal performance
               </p>
-              <button className="btn btn-secondary">Get Started</button>
+              <a href="#contact" className="btn btn-secondary">Get Started</a>
               <div className="relative mx-6">
                 <div className="p-1 my-8 mx-12 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                   <img

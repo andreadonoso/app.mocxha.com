@@ -9,23 +9,23 @@ import { Envelope,
  } from "@phosphor-icons/react";
 
  const homeLinks = [
-    { name: "Features", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "Pricing", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "About", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "Comparison", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "Testimonials", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "FAQ's", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Features", address: "#features" },
+    { name: "Pricing", address: "#pricing" },
+    { name: "About", address: "#about" },
+    { name: "Comparison", address: "#comparison" },
+    { name: "Testimonials", address: "#testimonials" },
+    { name: "FAQ's", address: "#" },
 ]
 
 const pagesLinks = [
-    { name: "Home", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "Privacy Policy", address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Home", address: "#" },
+    { name: "Privacy Policy", address: "#" },
 ]
 
 const socialLinks = [
-    { name: "Linkedin", icon: <LinkedinLogo size={24} weight="duotone"/>, address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "Twittter / X", icon: <XLogo size={24} weight="duotone"/>, address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
-    { name: "Instagram", icon: <InstagramLogo size={24} weight="duotone"/>, address: "https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app" },
+    { name: "Linkedin", icon: <LinkedinLogo size={24} weight="duotone"/>, address: "#" },
+    { name: "Twittter / X", icon: <XLogo size={24} weight="duotone"/>, address: "#" },
+    { name: "Instagram", icon: <InstagramLogo size={24} weight="duotone"/>, address: "#" },
 ]
 
 
@@ -81,7 +81,6 @@ export default function Footer() {
                                             key={item.name}
                                             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
                                             href={item.address}
-                                            target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             {item.name}
@@ -97,7 +96,6 @@ export default function Footer() {
                                             key={item.name}
                                             className="flex items-center gap-2 hover:underline hover:underline-offset-4"
                                             href={item.address}
-                                            target="_blank"
                                             rel="noopener noreferrer"
                                         >
                                             {item.name}

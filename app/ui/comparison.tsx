@@ -72,7 +72,7 @@ export default function Comparison() {
             </div>
           </div>
         </div>
-        <button className="btn btn-primary">See the Difference - Request a Demo</button>
+        <a href="#contact" className="btn btn-primary">See the Difference - Request a Demo</a>
         </div>
     )
 }

@@ -47,7 +47,7 @@ export default function Insights() {
               <div key={i} className="flex flex-col lg:flex-row lg:px-12 py-12 justify-between gap-16">
                 <div className="flex flex-col gap-8 items-start">
                   <h4>{item.question}</h4>
-                  <button className="btn btn-tertiary">Start 3-day free trial</button>
+                  <a href="#contact" className="btn btn-tertiary">Start 3-day free trial</a>
                 </div>
                 <div className="flex flex-col gap-4">
                   <h4>{item.title1}</h4>

@@ -118,9 +118,9 @@ export default function Plans() {
             <p>
               Looking for an affordable, customizable, and all in one platform? <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit"> Then Mocxha may be it. </span>
             </p>
-            <button  className="btn btn-secondary">
-              Request Access
-            </button>
+            <a href="#contact" className="btn btn-secondary">
+              Get Started
+            </a>
           </div>
           <div  className="flex">
             <div  className="flex items-center pr-2">

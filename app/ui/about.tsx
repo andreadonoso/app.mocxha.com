@@ -28,9 +28,9 @@ export default function About() {
                 <p>
                   By integrating essential functions and leveraging Aida AI, we enable companies to achieve peak efficiency, unlock critical insights, and scale confidently. We are committed to delivering an intuitive, powerful platform that adapts and evolves with your success.
                 </p>
-                <button className="btn btn-primary">
+                <a href="#contact" className="btn btn-primary">
                     Contact Us
-                </button>
+                </a>
               </div>
             </div>
             <div >
