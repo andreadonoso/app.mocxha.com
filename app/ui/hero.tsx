@@ -22,7 +22,7 @@ const logos = [
 
 export default function Hero() {
     return(
-      <div className="flex flex-col py-25 md:py-30 items-center justify-center text-center">
+      <div className="flex flex-col py-15 md:py-30 items-center justify-center text-center">
         <p className="pill-hero">Automate Your Business In One Click</p>
         <h1 className="pt-8 pb-4">Stop Juggling Software. Run Your Entire Business With{" "}
           <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">One AI-Powered Platform</span>
