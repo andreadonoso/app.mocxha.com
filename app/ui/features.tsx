@@ -13,7 +13,7 @@ const features = [
 
 export default function Features() {
     return(
-        <div className="flex flex-col justify-center items-center py-20 gap-10 md:flex-row md:justify-between">
+        <div className="flex flex-col-reverse justify-center items-center py-20 gap-10 md:flex-row md:justify-between">
           <div className="flex flex-col justify-center items-center h-">
             <div className="p-4 flex justify-center items-center rounded-xl bg-[#ffffff] border border-[#000000]/5 relative shadow-[0_1px_1px_rgba(0,0,0,0.04),0_10px_30px_rgba(0,0,0,0.10)]
                 overflow-hidden">
