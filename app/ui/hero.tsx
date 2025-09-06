@@ -22,24 +22,37 @@ const logos = [
 
 export default function Hero() {
     return(
-      <div className="flex flex-col py-15 md:py-30 items-center justify-center text-center">
-        <p className="pill-hero">Automate Your Business In One Click</p>
-        <h1 className="pt-8 pb-4">Stop Juggling Software. Run Your Entire Business With{" "}
-          <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">One AI-Powered Platform</span>
-        </h1>
-        <p className="text-[#3D3D3D]">Mocxha centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
-        <a  href="#contact" className="a btn btn-primary mt-8">Request a Live Demo</a>
-        <div className="p-1 my-8 relative h-auto rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+      <div className="flex flex-col py-10 md:py-18 items-center justify-center text-center">
+        <p className="pill-hero font-medium">Automate Your Business In One Click</p>
+        <div className="flex flex-col mx-5 md:mx-40 pt-8 pb-4 gap-2 md:gap-4">
+          <h1 className="md:text-6xl">Stop Juggling Software.</h1>
+          <h1 className="md:text-6xl">
+            Run Your Entire Business With</h1> 
+          <h1 className="md:text-6xl">
+            <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit">
+              One AI-Powered Platform
+            </span>
+          </h1>
+          <p className="text-[#3D3D3D] text-md font-medium">Mocxha centralizes your ERP, CRM, Marketing, HR, & Finance. Supercharged by Aida AI for unprecedented automation, insight, and growth. Replace dozens of disconnected tools today.</p>
+        </div>
+        <a  href="#contact" className="a btn btn-primary my-4 md:my-4">Request a Live Demo</a>
+        <div className="p-1 my-4 md:my-8 relative h-auto rounded-2xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
           <img
             src="/images/Lp2DrZG63F3x7ngFdocJez29ukk.jpg"
             alt="Dashboard"
-            className="rounded-lg block w-full h-auto "
+            className="rounded-2xl block w-full h-auto "
           />
         </div>
-        <p className="text=[#111111] my-8">One Platform to Rule Them All: Consolidate Your Business Software</p>
+        <div className="flex items-center gap-4">
+          <div className="w-1 h-1 rounded-full bg-[#DED8D3]" />
+          <p className="text=[#111111] my-12 font-medium text-lg md:hidden">One Platform to Rule Them All</p>
+          <p className="text=[#111111] my-12 font-medium text-lg hidden md:block">One Platform to Rule Them All: Consolidate Your Business Software</p>
+          <div className="w-1 h-1 rounded-full bg-[#DED8D3]" />
+        </div>
         <Marquee
           autoFill
           pauseOnClick
+          speed={20}
           className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
         >
           { logos.map((logo, i) => (
@@ -47,9 +60,9 @@ export default function Hero() {
               <Image
                 alt={logo.name}
                 src={logo.source}
-                width={140} 
-                height={35}
-                className="object-contain w-auto h-[35px] max-w-none"
+                width={120} 
+                height={30}
+                className="object-contain w-auto h-[30px] max-w-none"
               />
             </div>
           )) }

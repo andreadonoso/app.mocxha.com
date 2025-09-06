@@ -26,7 +26,8 @@ export default function Contact() {
               </div>
             ))}
           </div>
-          <div className="bg-[#111111] text-white p-4 flex-1">
+          {/* The following section will be available in V2 */}
+          <div className="bg-[#111111] text-white p-4 flex-1 hidden">
             <h5>30 Min Meeting - Moxcha</h5>
             <p>A quick demo to see if we are the right fit for eachother</p>
             <p>... embed api here...</p>
