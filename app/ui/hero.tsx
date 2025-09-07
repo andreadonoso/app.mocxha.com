@@ -50,24 +50,24 @@ export default function Hero() {
             <div className="w-1 h-1 rounded-full bg-[#DED8D3]" />
           </div>
           <div className="px-4 md:px-30 lg:px-50 w-full">
-          <Marquee
-            autoFill
-            pauseOnClick
-            speed={25}
-            className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_60px,_black_calc(100%-60px),transparent_100%)]"
-          >
-            { logos.map((logo, i) => (
-              <div key={i} className="mx-8">
-                <Image
-                  alt={logo.name}
-                  src={logo.source}
-                  width={120} 
-                  height={30}
-                  className="object-contain w-auto h-[30px] max-w-none"
-                />
-              </div>
-            )) }
-          </Marquee>
+            <Marquee
+              autoFill
+              pauseOnClick
+              speed={25}
+              className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_60px,_black_calc(100%-60px),transparent_100%)]"
+            >
+              { logos.map((logo, i) => (
+                <div key={i} className="mx-8">
+                  <Image
+                    alt={logo.name}
+                    src={logo.source}
+                    width={120} 
+                    height={30}
+                    className="object-contain w-auto h-[30px] max-w-none"
+                  />
+                </div>
+              )) }
+            </Marquee>
           </div>
         </div>
     )
