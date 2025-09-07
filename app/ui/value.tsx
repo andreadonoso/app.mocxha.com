@@ -22,8 +22,8 @@ const items = [
 export default function ValueProposition() {
     return(
         <div className="py-5 md:py-15">
-          <div className="flex flex-col sm:flex-row justify-center gap-8 py-8 items-center relative">
-            <h2>Wave goodbye to</h2>
+          <div className="flex flex-col sm:flex-row justify-center gap-8 py-8 sm:items-center relative">
+            <h2 className="text-nowrap">Wave goodbye to</h2>
               <div className="z-0 relative overflow-hidden h-50 [mask-image:_linear-gradient(to_bottom,transparent_0,_black_100px,_black_calc(100%-128px),transparent_100%)]">
                 <div className="animate-infinite-scroll flex flex-col gap-4">
                     {[...items, ...items].map((item, i) => (
