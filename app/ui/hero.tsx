@@ -22,7 +22,7 @@ const logos = [
 
 export default function Hero() {
     return(
-      <div className="flex flex-col py-10 md:py-18 items-center justify-center text-center">
+      <div className="flex flex-col py-10 md:py-15 items-center justify-center text-center">
         <p className="pill-hero font-medium">Automate Your Business In One Click</p>
         <div className="flex flex-col mx-5 md:mx-40 pt-8 pb-4 gap-2 md:gap-4">
           <h1 className="md:text-6xl">Stop Juggling Software.</h1>
@@ -49,11 +49,12 @@ export default function Hero() {
           <p className="text=[#111111] my-12 font-medium text-lg hidden md:block">One Platform to Rule Them All: Consolidate Your Business Software</p>
           <div className="w-1 h-1 rounded-full bg-[#DED8D3]" />
         </div>
+        <div className="px-4 md:px-30 lg:px-50 w-full">
         <Marquee
           autoFill
           pauseOnClick
-          speed={20}
-          className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+          speed={25}
+          className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_60px,_black_calc(100%-60px),transparent_100%)]"
         >
           { logos.map((logo, i) => (
             <div key={i} className="mx-8">
@@ -67,6 +68,7 @@ export default function Hero() {
             </div>
           )) }
         </Marquee>
+        </div>
       </div>
     )
 }
