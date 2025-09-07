@@ -17,23 +17,37 @@ export default function Home() {
   return (
     <div>
       <main className="flex flex-col min-h-screen">
-        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
+        <section className="section">
           <Hero/>
-          <Solutions/>
-          <Features/>
+        </section>
+        <section className="bg-[#F6F5F4]">
+          <section className="section">
+            <Solutions/>
+            <Features/>
+          </section>
+        </section>
+        <section className="section">
           <ValueProposition/>
-          <RADS/>
-          <Plans/>
+        </section>
+        <section className="bg-[#F6F5F4]">
+          <section className="section">
+            <RADS/>
+            <Plans/>
+          </section>
+        </section>
+        <section className="section">
           <About/>
           <Comparison/>
-        </div>
+        </section>
         <Overview/>
-        <div className="mx-auto max-w-7xl px-4 md:px-6 lg:px-8">
-          <Differentiator/>
-          <Insights/>
-          <Contact/>
-          <FAQs/>
-        </div>
+        <section className="bg-[#F1F0EE]">
+          <section className="section">
+            <Differentiator/>
+            <Insights/>
+            <Contact/>
+            <FAQs/>
+          </section>
+        </section>
       </main>
     </div>
   );

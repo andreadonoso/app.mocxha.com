@@ -16,7 +16,7 @@ const qa = [
 
 export default function FAQs() {
     return(
-        <div className="bg-[#f4f2f1] py-20 flex flex-col gap-8">
+        <div className="py-20 flex flex-col gap-8">
             <div className="text-center">
                 <p className="pill">FAQs</p>
                 <h2>Frequently Asked Questions</h2>
