@@ -36,7 +36,7 @@ export default function FAQs() {
                     </div>
                 ))}
             </div>
-            <div className="flex w-full p-6 justify-between items-center bg-white rounded-xl">
+            <div className="flex flex-col md:flex-row w-full p-6 justify-between items-start bg-white rounded-xl gap-4">
                 <div>
                     <h6>
                         Have Questions? We're Here to Help!
@@ -45,7 +45,7 @@ export default function FAQs() {
                         Reach out to our support team for any queries or assistance.
                     </p>
                 </div>
-                <a href="#contact"  className="btn btn-primary">Contact Us</a>
+                <a href="#contact"  className="btn btn-primary w-full md:w-auto">Contact Us</a>
             </div>
         </div>
     )

@@ -89,4 +89,16 @@ body{
   .btn-tertiary {
     @apply text-black focus:ring-4 bg-transparent border transition delay-1 duration-300 ease-in-out active:scale-95
   }
+
+  .card-white {
+    @apply p-4 border rounded-3xl  bg-white h-60 flex flex-col justify-between border-black/5
+  }
+
+  .card-body {
+    @apply pb-4 w-full border border-[#dcdbd4] rounded-3xl bg-[#E8E4E2]
+  }
+
+  .dot {
+    @apply w-1 h-1 rounded-full bg-[#DED8D3]
+  }
 } 

@@ -64,10 +64,10 @@ export default function Footer() {
                                     />
                                     <p>Simplifying Projects and Achieving Goals.</p>
                                 </div>
-                                <button className="btn btn-primary flex gap-2 items-center justify-between md:mx-0 mx-4 rounded-lg text-[#808080] border border-[#808080]  bg-transparent">
+                                <button className="btn btn-primary group flex gap-2 items-center justify-between md:mx-0 mx-4 rounded-lg text-[#808080] border border-[#808080]  bg-transparent">
                                     <Envelope size={24} weight="duotone"/>
                                     support@mocxha.com
-                                    <ArrowRight size={24} className="transition delay-1 duration-300 ease-in-out hover:translate-x-1"/>
+                                    <ArrowRight size={24} className="transition delay-1 duration-300 ease-in-out group-hover:translate-x-1"/>
                                 </button>
                             </div>
                         </div>
