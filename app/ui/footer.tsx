@@ -45,15 +45,15 @@ export default function Footer() {
                         <form className="w-80 py-8">
                             <label htmlFor="email" className="mb-2 text-sm font-medium text-gray-900 sr-only dark:text-white">Enter your email</label>
                             <div className="relative">
-                                <input type="email" id="email" className="block w-full p-3 ps-2.5 text-sm text-gray-900 border border-gray-300 rounded-lg bg-[#1E1E1E] focus:ring-blue-500 focus:border-blue-500 dark:bg-[#1E1E1E] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your email" required />
-                                <button type="submit" className="text-black absolute end-0.5 bottom-0.5 bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-3 dark:bg-[#ffffff] dark:hover:bg-blue-700 dark:focus:ring-blue-800">Get started</button>
+                                <input type="email" id="email" className="block w-full p-3 ps-2.5 text-sm border border-gray-300 rounded-lg bg-[#1E1E1E] placeholder-gray-400 text-white" placeholder="Enter your email" required />
+                                <button type="submit" className="btn btn-secondary absolute end-0.5 bottom-0.5 font-medium rounded-lg text-sm px-5 py-3 ">Get started</button>
                             </div>
                         </form>
                     </div>
                     <hr className="my-6 border-gray-700" />
                     <div className="flex flex-col md:flex-row w-full justify-between py-12 ">
-                        <div className="flex text-[#808080]">
-                            <div className="flex md:flex-row justify-between flex-col">
+                        <div className="flex text-[#808080] justify-center">
+                            <div className="flex flex-col sm:flex-row md:flex-col gap-12 items-center sm:justify-between">
                                 <div className="items-center flex">
                                     <img 
                                         alt="Mocxha logo"
@@ -64,10 +64,10 @@ export default function Footer() {
                                     />
                                     <p>Simplifying Projects and Achieving Goals.</p>
                                 </div>
-                                <button className=" flex items-center justify-between w-55 px-4 py-3 md:mx-0 mx-4 rounded-lg text-[#808080] border border-[#808080]  bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-sm  dark:bg-transparent dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+                                <button className="btn btn-primary flex gap-2 items-center justify-between md:mx-0 mx-4 rounded-lg text-[#808080] border border-[#808080]  bg-transparent">
                                     <Envelope size={24} weight="duotone"/>
-                                    info@mocxha.com
-                                    <ArrowRight size={24}/>
+                                    support@mocxha.com
+                                    <ArrowRight size={24} className="transition delay-1 duration-300 ease-in-out hover:translate-x-1"/>
                                 </button>
                             </div>
                         </div>
@@ -79,7 +79,7 @@ export default function Footer() {
                                     { homeLinks.map((item) => (
                                         <a 
                                             key={item.name}
-                                            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                                            className="flex items-center gap-2 hover:text-white"
                                             href={item.address}
                                             rel="noopener noreferrer"
                                         >
@@ -94,7 +94,7 @@ export default function Footer() {
                                     { pagesLinks.map((item) => (
                                         <a 
                                             key={item.name}
-                                            className="flex items-center gap-2 hover:underline hover:underline-offset-4"
+                                            className="flex items-center gap-2 hover:text-white"
                                             href={item.address}
                                             rel="noopener noreferrer"
                                         >
@@ -109,7 +109,7 @@ export default function Footer() {
                                     { socialLinks.map((item) => (
                                         <a 
                                             key={item.name}
-                                            className="flex items-center gap-2 hover:underline hover:underline-offset-4 text-[#808080]  justify-start bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 dark:bg-[#1E1E1E] dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+                                            className="flex items-center gap-2 hover:text-white text-[#808080]  justify-start font-medium rounded-lg text-sm px-4 py-2 bg-[#1E1E1E]"
                                             href={item.address}
                                             target="_blank"
                                             rel="noopener noreferrer"
