@@ -1,4 +1,5 @@
 "use client"
+import React, {useState} from 'react'
 import {Plus, Minus } from "@phosphor-icons/react";
 
 const qa = [
@@ -15,24 +16,37 @@ const qa = [
 ]
 
 export default function FAQs() {
+
+    const [open, setOpen] = useState<Set<string>>(new Set());
+
+    const toggle = (id: string) => {
+        setOpen(oldSet => {
+            const newSet = new Set(oldSet);
+
+            if(newSet.has(id)) newSet.delete(id);
+            else newSet.add(id);
+
+            return newSet;
+        })
+    }
+
     return(
         <div className="py-20 flex flex-col gap-8">
             <div className="text-center">
                 <p className="pill">FAQs</p>
                 <h2>Frequently Asked Questions</h2>
             </div>
-            <div>
+            <div className="grid-cols-1 lg:gap-x-16 mb-10 items-start">
                 {qa.map((item, i) => (
                     <div key={i} >
-                        <hr className="my-6 border-gray-700" />
-                        <div className="flex justify-between items-center">
+                        <hr className="border-t-[#E8E4E2]" />
+                        <button className="flex justify-between items-center text-start w-full py-6" onClick={() => toggle(item.question)}>
                             <h6>{item.question}</h6>
-                            <div>
-                                <Plus/>
-                                <Minus/>
-                            </div>
-                        </div>
-                        <p>{item.answer}</p>
+                            <Plus className={`transition duration-300 ease-out ${open.has(item.question) ? 'rotate-45' : ''}`} />
+                        </button>
+                        <p className={"transition-opacity duration-300 ease-out " + (open.has(item.question) ? "opacity-100 pb-6" : "opacity-0 pointer-events-none select-none h-0")}>
+                            {item.answer}
+                        </p>
                     </div>
                 ))}
             </div>
