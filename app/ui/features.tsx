@@ -34,7 +34,7 @@ export default function Features() {
               {features.map((item, i) => (
                 <div key={i} className="flex items-center gap-4">
                   <div className="flex itemss-center justify-center p-px rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                    <div className="flex items-center justify-center size-6 rounded-lg bg-linear-to-t from-black to-[#7c7c7c]">
+                    <div className="black-gradient rounded-lg size-6">
                       <Check size={15} color="#ffffff"/>
                     </div>
                   </div>

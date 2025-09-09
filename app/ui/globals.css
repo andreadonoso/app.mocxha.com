@@ -101,4 +101,12 @@ body{
   .dot {
     @apply w-1 h-1 rounded-full bg-[#DED8D3]
   }
+
+  .black-gradient {
+    @apply flex items-center justify-center bg-linear-to-t from-black to-[#7c7c7c]
+  }
+
+  .white-gradient {
+    @apply flex items-center justify-center bg-linear-to-t from-transparent to-white
+  }
 } 
