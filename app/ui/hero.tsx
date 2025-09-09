@@ -44,10 +44,10 @@ export default function Hero() {
             />
           </div>
           <div className="flex items-center gap-4">
-            <div className="w-1 h-1 rounded-full bg-[#DED8D3]" />
+            <div className="dot" />
             <p className="text=[#111111] my-12 font-medium text-lg md:hidden">One Platform to Rule Them All</p>
             <p className="text=[#111111] my-12 font-medium text-lg hidden md:block">One Platform to Rule Them All: Consolidate Your Business Software</p>
-            <div className="w-1 h-1 rounded-full bg-[#DED8D3]" />
+            <div className="dot" />
           </div>
           <div className="px-4 md:px-30 lg:px-50 w-full">
             <Marquee

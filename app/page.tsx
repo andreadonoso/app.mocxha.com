@@ -26,9 +26,13 @@ export default function Home() {
             <Features/>
           </section>
         </section>
+        <hr className="border-[#E8E4E2]"/>
+        <hr className="border-[#ffffff]"/>
         <section className="section">
           <ValueProposition/>
         </section>
+        <hr className="border-[#E8E4E2]"/>
+        <hr className="border-[#ffffff]"/>
         <section className="bg-[#F6F5F4]">
           <section className="section">
             <RADS/>

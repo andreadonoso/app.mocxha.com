@@ -2,7 +2,7 @@
 import {Plus, Minus } from "@phosphor-icons/react";
 
 const qa = [
-    { question: "What is Taskforge?", answer: "Mocxha is a comprehensive, all-in-one business management platform powered by Aida AI. It integrates essential functions like ERP, CRM, accounting, project management, marketing automation, HR, and inventory management into a single, unified system. Our goal is to streamline your operations, eliminate data silos, enhance collaboration, and drive significant growth by replacing multiple disconnected software tools."},
+    { question: "What is Mocxha?", answer: "Mocxha is a comprehensive, all-in-one business management platform powered by Aida AI. It integrates essential functions like ERP, CRM, accounting, project management, marketing automation, HR, and inventory management into a single, unified system. Our goal is to streamline your operations, eliminate data silos, enhance collaboration, and drive significant growth by replacing multiple disconnected software tools."},
     { question: "How does Mocxha improve business valuation?", answer: "Mocxha enhances business valuation through several key factors: Operational Efficiency: Streamlined processes demonstrably reduce overhead and increase profitability metrics attractive to buyers/investors. Scalability: The platform's architecture is built to grow with your business, proving its capacity for future expansion. Data Centralization & Insights: Unified, accessible data allows for sophisticated reporting and strategic decision-making, showcasing strong management capabilities. Data Ownership & Compliance (On-Premise): Full control over data and infrastructure via our optional on-premise hosting meets critical security and compliance needs, increasing value for regulated industries or security-conscious acquirers. Reduced Tech Debt & Transition Time: Consolidating onto one platform simplifies the technology stack, making due diligence and transitions smoother and less costly for potential buyers."},
     { question: "Is Mocxha suitable for a wide range of industries?", answer: "Yes. While offering deep functionality across core business areas common to most companies, Mocxha also includes customizable modules and industry-specific app options (particularly in Pro, Premium, and Enterprise plans). This allows you to tailor workflows, terminology, and reporting to the unique needs of various sectors, including Retail, Manufacturing, Professional Services, Marketing Agencies, Construction, Nonprofits, and more."},
     { question: "Can I integrate Mocxha with other tools?", answer: "Absolutely. We understand that businesses often rely on specific external tools for specialized functions. Mocxha is designed with integration in mind, offering robust API access and pre-built connectors for common third-party applications (availability varies by plan tier). This allows you to maintain a cohesive workflow while leveraging the unified power of Mocxha. Enterprise plans offer bespoke integration development options."},
@@ -36,7 +36,7 @@ export default function FAQs() {
                     </div>
                 ))}
             </div>
-            <div className="flex w-full p-6 justify-between items-center bg-white rounded-xl">
+            <div className="flex flex-col md:flex-row w-full p-6 justify-between items-start bg-white rounded-xl gap-4">
                 <div>
                     <h6>
                         Have Questions? We're Here to Help!
@@ -45,7 +45,7 @@ export default function FAQs() {
                         Reach out to our support team for any queries or assistance.
                     </p>
                 </div>
-                <a href="#contact"  className="btn btn-primary">Contact Us</a>
+                <a href="#contact"  className="btn btn-primary w-full md:w-auto">Contact Us</a>
             </div>
         </div>
     )

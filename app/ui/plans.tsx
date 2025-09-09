@@ -74,9 +74,9 @@ export default function Plans() {
               <p className={ "whitespace-nowrap" + (monthly ? " text-black"  : " text-gray-500")}>Billed yearly</p>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row gap-4">
-            <div className="pb-4 border border-[#dcdbd4] rounded-lg bg-[#E8E4E2]">
-              <div className="p-4 border rounded-lg bg-white h-50 flex flex-col justify-between border-black/5">
+          <div className="grid lg:grid-cols-3 md:grid-cols-2 grid-cols-1 gap-4">
+            <div className="card-body">
+              <div className="card-white">
                 <Image
                     alt="TBD"
                     src="/svgs/jgVdpmhK03pQ0sFqgkrmN1u1Y.svg"
@@ -84,7 +84,7 @@ export default function Plans() {
                     height={30}
                   />
                 <h6>Basic</h6>
-                <p>Best for personal use </p>
+                <p className="h-15 ">Best for personal use </p>
                 <button  className="btn btn-primary">
                   Early Access
                 </button>
@@ -98,31 +98,33 @@ export default function Plans() {
                   ))}
                 </div>
             </div>
-            <div className="pb-4 border border-[#dcdbd4] rounded-lg bg-[#E8E4E2]">
-              <div className="p-4 border rounded-lg bg-white h-50 flex flex-col justify-between border-black/5">
-                <Image
-                  alt="TBD"
-                  src="/svgs/En4lEj9XDauBGTWPq8rrDGuUk.svg"
-                  width={30}
-                  height={30}
-                />
-                <h6>Pro</h6>
-                <p>Best for small to mid-sized teams</p>
-                <button  className="btn btn-primary">
-                  Early Access
-                </button>
-              </div>
-              <div className="px-4 mt-4">
-                {contentPro.map((item, i) => (
-                  <div key={i} className="flex gap-2">
-                    <Check/>
-                    {item.description}
-                  </div>
-                ))}
+            <div className="flex w-full p-[2px] justify-center rounded-3xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+              <div className="card-body">
+                <div className="card-white">
+                  <Image
+                    alt="TBD"
+                    src="/svgs/En4lEj9XDauBGTWPq8rrDGuUk.svg"
+                    width={30}
+                    height={30}
+                  />
+                  <h6>Pro</h6>
+                  <p className="h-15 ">Best for small to mid-sized teams</p>
+                  <button  className="btn btn-primary">
+                    Early Access
+                  </button>
+                </div>
+                <div className="px-4 mt-4">
+                  {contentPro.map((item, i) => (
+                    <div key={i} className="flex gap-2">
+                      <Check/>
+                      {item.description}
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
-            <div className="pb-4 border border-[#dcdbd4] rounded-lg bg-[#E8E4E2]">
-              <div className="p-4 border rounded-lg bg-white h-50 flex flex-col justify-between border-black/5">
+            <div className="card-body">
+              <div className="card-white">
                 <Image
                   alt="TBD"
                   src="/svgs/pm0nOe4YNOAoYGJMRClXCtMFWE.svg"
@@ -130,8 +132,8 @@ export default function Plans() {
                   height={30}
                 />
                 <h6>Enterprise</h6>
-                <p>Get a custom demo and see how Mocxha</p>
-                <p>aligns with your goals.</p>
+                <p className="h-15 ">Get a custom demo and see how Mocxha aligns with your goals.</p>
+                <p></p>
                 <button  className="btn btn-primary">
                   Early Access
                 </button>
@@ -146,20 +148,21 @@ export default function Plans() {
               </div>
             </div>
           </div>
-          <div className="flex flex-col sm:flex-row bg-[#E8E4E2] items-center justify-between  rounded-lg p-3 w-full my-8">
+          <div className="flex flex-col md:flex-row bg-[#E8E4E2] items-center justify-between  gap-4 rounded-lg p-3 w-full my-8">
             <p>
               Looking for an affordable, customizable, and all in one platform? <span className="bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] bg-clip-text  text-transparent font-bold w-fit"> Then Mocxha may be it. </span>
             </p>
-            <a href="#contact" className="btn btn-secondary">
+            <a href="#contact" className="btn btn-secondary w-full md:w-auto">
               Get Started
             </a>
           </div>
-          <div  className="flex">
-            <div  className="flex items-center pr-2">
+          <div  className="flex items-center gap-4">
+            <div  className="flex items-center">
               <CalendarDot/>
               <p>Free 3 days trial</p>
             </div>
-            <div  className="flex items-center pl-2">
+            <div className="dot"></div>
+            <div  className="flex items-center">
               <Database/>
               <p>Data migration</p>
             </div>
