@@ -2,9 +2,9 @@
 import { Envelope, Phone, MapPin } from "@phosphor-icons/react";
 
 const items = [
-  {icon: <Envelope color="#000000" weight="fill" size={24}/>, description: "info@mocxha.com", action: "Email Us"},
-  {icon: <Phone color="#000000" weight="fill" size={24}/>, description: "+1 (786)-796-6757", action: "Call Us"},
-  {icon: <MapPin color="#000000" weight="fill" size={24}/>, description: "3300 NE 192 St, Aventura, FL 33180", action: "Get Direction"},
+  {icon: <Envelope color="#000000" weight="fill" size={24}/>, description: "support@mocxha.com", action: "Email Us"},
+  {icon: <Phone color="#000000" weight="fill" size={24}/>, description: "+1 (954) 328-2024", action: "Call Us"},
+  {icon: <MapPin color="#000000" weight="fill" size={24}/>, description: "3510 NW 84th Ave office 340, Plantation, FL 33324", action: "Get Direction"},
 ]
 
 export default function Contact() {

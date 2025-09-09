@@ -62,7 +62,7 @@ export default function Header() {
                         <img 
                             alt="Mocxha logo"
                             src="images/mocxha-logo.png"
-                            className="h-8 w-auto"
+                            className="h-8 w-auto transition delay-5 duration-300 ease-in-out hover:scale-108"
                             width="120" 
                             height="32" 
                         />
@@ -113,7 +113,7 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden xl:flex xl:flex-1 xl:justify-end  xl:gap-x-2">
-                    <a href="#contact" className="rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
+                    <a href="#contact" className="btn btn-primary">
                     Request access
                     </a>
                 </div>
