@@ -47,7 +47,7 @@ export default function About() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
             {items.map((item, i) => (
               <div key={i} className="flex flex-col text-center justify-between items-center gap-2 border border-[#dcdbd4] bg-[#E8E4E2] rounded-xl py-8 w-full">
-                <div className="p-[2px] items-center flex justify-center mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                <div className="p-[2px] items-center flex justify-center rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                   <div className="black-gradient p-2 rounded-lg">
                     {item.icon}
                   </div>
