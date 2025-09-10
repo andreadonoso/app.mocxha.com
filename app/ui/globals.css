@@ -1,11 +1,5 @@
 @import "tailwindcss";
 
-:root{
-  /* Stripes get wider as the viewport grows */
-  --stripe-w: clamp(10px, 1.2vw, 28px);
-  --stripe-alpha: .10;
-}
-
 body{
     background-color:#f4f2f1;
 }
