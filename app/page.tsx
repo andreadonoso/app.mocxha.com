@@ -47,6 +47,12 @@ export default function Home() {
         <section className="bg-[#F1F0EE]">
           <section className="section">
             <Differentiator/>
+          </section>
+        </section>
+        <hr className="border-[#E8E4E2]"/>
+        <hr className="border-[#ffffff]"/>
+        <section className="bg-[#F1F0EE]">
+          <section className="section">
             <Insights/>
             <Contact/>
             <FAQs/>

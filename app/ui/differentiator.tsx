@@ -16,15 +16,15 @@ const items = [
 
 export default function Differentiator() {
     return(
-        <div className="flex flex-col items-center justify-center py-20">
-          <div className="flex flex-col items-center justify-center gap-4">
+        <div className="flex flex-col items-center justify-center py-15 md:py-20 ">
+          <div className="flex flex-col items-center justify-center gap-4 text-center">
             <p className="pill">Unique Features</p>
             <h2>Unleash Taskforge's Unique Potential for you</h2>
-            <p>
+            <p className="text-[#3D3D3D]">
               Discover Taskforge’s powerful and unique tools that set it apart, offering unmatched efficiency, customization, and collaboration.
             </p>
           </div>
-          <div className="p-16">
+          <div className="md:px-16">
             {items.map((item, i) => (
               <div key={i} className="bg-white rounded-xl pb-8 my-8">
                 <div className="flex bg-[#F6F5F4] border border-white rounded-xl p-5 gap-4 items-center [&>svg]:block">
@@ -47,9 +47,6 @@ export default function Differentiator() {
               </div>
             ))}
           </div>
-          <p className="font-semibold">
-            How Much Could Your Business Gain with Mocxha’s All-in-One Aida AI Automation and Insights?
-          </p>
         </div>
     )
 }

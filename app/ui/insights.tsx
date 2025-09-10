@@ -25,8 +25,11 @@ const features = [
 ]
 export default function Insights() {
     return(
-        <div className="py-20">
-          <div className="flex flex-col justify-center items-center">
+        <div className="pt-5 pb-10 md:pt-10 md:pb-15 text-center">
+          <div className="flex flex-col justify-center items-center pb-10">
+            <p className="font-semibold pt-8 pb-10 md:pb-20">
+              How Much Could Your Business Gain with Mocxha’s All-in-One Aida AI Automation and Insights?
+            </p>
             <p className="pill">Industry Insights</p>
             <h2>
               How Our Integrated Platform Empowers Key Departments
@@ -59,13 +62,13 @@ export default function Insights() {
               </div>
             ))}
           </div>
-          <div className="flex flex-col lg:flex-row  lg:justify-between items-center">
-            <div className="flex flex-col lg:flex-row  lg:justify-between gap-2">
+          <div className="px-8 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
               {features.map((item, i) => (
-                <div key={i} className="flex">
-                  <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                    <div className="p3 rounded-md bg-[#000000]">
-                      <Check size={24} color="#ffffff"/>
+                <div key={i} className="flex items-center text-start gap-4">
+                 <div className="flex itemss-center justify-center p-px rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                    <div className="black-gradient rounded-lg size-6">
+                      <Check size={15} color="#ffffff"/>
                     </div>
                   </div>
                   <p>{item.description}</p>

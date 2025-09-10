@@ -39,7 +39,7 @@ export default function Comparison() {
             <h2>
               Mocxha: The Clear Advantage
             </h2>
-            <p>
+            <p className="text-[#3D3D3D] pt-4">
               Move beyond the limitations of patching together multiple software solutions.
             </p>
           </div>  
@@ -59,7 +59,7 @@ export default function Comparison() {
             <div className="flex items-center justify-center md:items-start ">
               <p className="pill bg-black text-white w-fit">V/S</p>
             </div>
-            <div className="w-full p-0.5 mr-4 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+            <div className="w-full p-0.5 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
               <div className="flex flex-col rounded-xl gap-2 bg-white">
                 <h5 className="text-center  pt-8 pb-4">MOCXHA</h5>
                 <hr className="border-[#DED8D3]" />

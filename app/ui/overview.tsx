@@ -10,10 +10,10 @@ import {
  import Marquee from "react-fast-marquee";
 
 const items = [
-  { icon: <FolderOpen size={24} weight="duotone"/>, title: "Embedded Aida AI", description: "Leverage predictive analytics, task automation suggestions, and strategic decision support seamlessly integrated across CRM, Marketing, Finance, and Operations."},
-  { icon: <UserCirclePlus size={24} weight="duotone"/>, title: "Seamless Integrations", description: "Connect Mocxha with your essential third-party tools (e.g., communication platforms, specialized software) via robust APIs and pre-built connector to maintain a unified workflow."},
-  { icon: <Timer size={24} weight="duotone"/>, title: "Flexible On-Premise Hosting", description: "Gain complete data sovereignty, enhanced security control, and simplified compliance management with our Enterprise-level on-premise deployment option."},
-  { icon: <Tag size={24} weight="duotone"/>, title: "Industry-Specific Adaptability", description: "Utilize customizable modules and configure workflows to precisely match the unique operational demands of your specific industry."},
+  { icon: <FolderOpen size={32} weight="duotone"/>, title: "Embedded Aida AI", description: "Leverage predictive analytics, task automation suggestions, and strategic decision support seamlessly integrated across CRM, Marketing, Finance, and Operations."},
+  { icon: <UserCirclePlus size={32} weight="duotone"/>, title: "Seamless Integrations", description: "Connect Mocxha with your essential third-party tools (e.g., communication platforms, specialized software) via robust APIs and pre-built connector to maintain a unified workflow."},
+  { icon: <Timer size={32} weight="duotone"/>, title: "Flexible On-Premise Hosting", description: "Gain complete data sovereignty, enhanced security control, and simplified compliance management with our Enterprise-level on-premise deployment option."},
+  { icon: <Tag size={32} weight="duotone"/>, title: "Industry-Specific Adaptability", description: "Utilize customizable modules and configure workflows to precisely match the unique operational demands of your specific industry."},
 ]
 
 const features = [
@@ -29,14 +29,14 @@ const features = [
 
 export default function Overview() {
     return(
-        <div className="flex flex-col justify-center items-center py-20 gap-10 md:justify-between bg-[#111111] text-white">
+        <div className="flex flex-col justify-center items-center py-20 md:py-25 lg:py-30 gap-10 md:justify-between bg-[#111111] text-white">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col justify-center items-center gap-4 text-center">
               <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
                 <p className="pill m-0 bg-black">HQ Overview</p>
               </div>
               <h2>Key Platform Capabilities: Beyond the Core Modules</h2>
-              <p>
+              <p className="text-[#DED8D3]">
                 Mocxha integrates powerful, platform-wide features designed for modern business challenges and optimal performance
               </p>
               <a href="#contact" className="btn btn-secondary">Get Started</a>
@@ -60,24 +60,23 @@ export default function Overview() {
                 />
               </div>
             </div>
-            <div className="md:flex-row flex flex-col">
+            <div className="lg:flex-row flex flex-col ">
               {items.map((item, i) => (
-                <div key={i} className="p-8">
+                <div key={i} className="flex flex-col p-8 w-full border-t-1 border-t-[#3D3D3D]">
                   {item.icon}
-                  <h5>{item.title}</h5>
-                  <p>{item.description}</p>
+                  <h5 className="pt-8">{item.title}</h5>
+                  <p className="text-[#808080]">{item.description}</p>
                 </div>
               ))}
             </div>
             <div className="flex flex-col justify-center items-center gap-4">
-              <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                  <p className="pill m-0 bg-black">Other Interesting Features</p>
-              </div>
-             
+                <div className="my-10 rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                    <p className="pill m-0 bg-black">Other Interesting Features</p>
+                </div>
                 <Marquee
                   autoFill
                   pauseOnClick
-                  className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_128px,_black_calc(100%-128px),transparent_100%)]"
+                  className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_132px,_black_calc(100%-132px),transparent_100%)]"
                 >
                   {features.map((item, i) => (
                     <div key={i} className="flex items-center justify-center m-2 p-4 rounded-lg bg-[#1e1e1e] text-white" >
@@ -86,7 +85,6 @@ export default function Overview() {
                     </div>
                   ))}
                 </Marquee>
-              
             </div>
           </div>
         </div>

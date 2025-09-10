@@ -9,7 +9,7 @@ const items = [
 
 export default function Contact() {
     return(
-        <div id="contact" className="py-20 flex flex-col md:flex-row gap-8">
+        <div id="contact" className="flex flex-col md:flex-row gap-8 pt-5 pb-8 ">
           <div className="flex flex-col gap-4">
             <p className="pill">Contact</p>
             <h2>Ready to Discuss Your Specific Needs? Let's Connect.</h2>
