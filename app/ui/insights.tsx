@@ -25,8 +25,11 @@ const features = [
 ]
 export default function Insights() {
     return(
-        <div className="py-20">
-          <div className="flex flex-col justify-center items-center">
+        <div className="pt-5 pb-10 md:pt-10 md:pb-15 text-center">
+          <div className="flex flex-col justify-center items-center pb-10">
+            <p className="font-semibold pt-8 pb-10 md:pb-20">
+              How Much Could Your Business Gain with Mocxha’s All-in-One Aida AI Automation and Insights?
+            </p>
             <p className="pill">Industry Insights</p>
             <h2>
               How Our Integrated Platform Empowers Key Departments

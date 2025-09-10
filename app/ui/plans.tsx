@@ -45,7 +45,7 @@ export default function Plans() {
         <div id="pricing" className="flex flex-col items-center pt-5 pb-15 md:pt-10 md:pb-20">
           <p className="inline-flex bg-[#ffffff] border border-[#DED8D3]/3  shadow-[0_1px_1px_rgba(0,0,0,0.20),0_8px_20px_rgba(0,0,0,0.05)] rounded-[100] px-2 py-2 my-5">Pricing & Plans</p>
           <h2>Affordable Pricing Plans</h2>
-          <p className="pt-4">Flexible, transparent pricing to support your team’s productivity and growth at every stage.</p>
+          <p className="pt-4 text-[#3D3D3D]">Flexible, transparent pricing to support your team’s productivity and growth at every stage.</p>
           <div  className="flex flex-col py-8 items-center ">
             <p className={
                 "inline-block whitespace-nowrap mx-4 " +

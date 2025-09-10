@@ -39,7 +39,7 @@ export default function Comparison() {
             <h2>
               Mocxha: The Clear Advantage
             </h2>
-            <p>
+            <p className="text-[#3D3D3D] pt-4">
               Move beyond the limitations of patching together multiple software solutions.
             </p>
           </div>  
