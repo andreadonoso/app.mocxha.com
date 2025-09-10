@@ -31,7 +31,7 @@ export default function FAQs() {
     }
 
     return(
-        <div className="py-20 flex flex-col gap-8">
+        <div className="pt-5 pb-15 md:pt-10 md:pb-20 flex flex-col gap-8">
             <div className="text-center">
                 <p className="pill">FAQs</p>
                 <h2>Frequently Asked Questions</h2>
