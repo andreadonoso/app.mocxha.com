@@ -31,48 +31,54 @@ const ourPlatform = [
 
 export default function Comparison() {
     return(
-        <div id="comparison" className="flex flex-col justify-center items-center gap-8 py-20">
-          <div className="flex flex-col justify-center items-center">
-          <p className="pill">
-            Comparison
-          </p>
-          <h2>
-            Mocxha: The Clear Advantage
-          </h2>
-          <p>
-            Move beyond the limitations of patching together multiple software solutions.
-          </p>
-        </div>
-        <div className="flex flex-col sm:flex-row gap-4">
-          <div>
-            <div className="flex flex-col p-10 border border-[#ded8d3] bg-[#e8e4e2] rounded-xl gap-2">
-              <h5 className="text-center">OTHER PLATFORMS</h5>
-              {otherPlatforms.map((item, i) => (
-                <div key={i} className="flex items-center">
-                  <MaskSad />
-                  <p>{item.description}</p>
-                </div>
-              ))}
+        <div id="comparison" className="flex flex-col justify-center items-center gap-8 pt-5 pb-15 md:pt-10 md:pb-20">
+          <div className="flex flex-col justify-center items-center text-center">
+            <p className="pill">
+              Comparison
+            </p>
+            <h2>
+              Mocxha: The Clear Advantage
+            </h2>
+            <p>
+              Move beyond the limitations of patching together multiple software solutions.
+            </p>
+          </div>  
+          <div className="flex flex-col items-center md:flex-row gap-4 md:justify-start md:items-start ">
+            <div className="flex flex-col  border border-[#ded8d3] bg-[#e8e4e2] rounded-xl gap-2 w-full">
+              <h5 className="text-center pt-8 pb-4">OTHER PLATFORMS</h5>
+              <hr className="border-[#DED8D3]" />
+              <div className="p-8 flex flex-col gap-4">
+                {otherPlatforms.map((item, i) => (
+                  <div key={i} className="flex items-center gap-4">
+                    <MaskSad size={20} weight="duotone" color="#111111"/>
+                    <p className="text-[#4C4C4C]">{item.description}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-          </div>
-          <p className="pill bg-black text-white h-full">V/S</p>
-          <div className="p-0.5 mr-4 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-            <div className="flex flex-col p-10  rounded-xl gap-2 bg-white">
-              <h5 className="text-center">MOCXHA</h5>
-              {ourPlatform.map((item, i) => (
-                <div key={i} className="flex items-center">
-                    <div className="p-0.5 mr-4 rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                      <div className="p3 rounded-md bg-[#000000]">
-                        <Check size={24} color="#ffffff"/>
-                      </div>
+            <div className="flex items-center justify-center md:items-start ">
+              <p className="pill bg-black text-white w-fit">V/S</p>
+            </div>
+            <div className="w-full p-0.5 mr-4 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+              <div className="flex flex-col rounded-xl gap-2 bg-white">
+                <h5 className="text-center  pt-8 pb-4">MOCXHA</h5>
+                <hr className="border-[#DED8D3]" />
+                <div className="p-8 flex flex-col gap-4">
+                  {ourPlatform.map((item, i) => (
+                    <div key={i} className="flex items-center gap-4">
+                        <div className="flex itemss-center justify-center p-px rounded-lg bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
+                          <div className="black-gradient rounded-lg size-6">
+                            <Check size={15} color="#ffffff"/>
+                          </div>
+                        </div>
+                      <p className="text-[#4C4C4C]">{item.description}</p>
                     </div>
-                  <p>{item.description}</p>
+                  ))}
                 </div>
-              ))}
+              </div>
             </div>
           </div>
-        </div>
-        <a href="#contact" className="btn btn-primary">See the Difference - Request a Demo</a>
+          <a href="#contact" className="btn btn-primary mt-4">See the Difference - Request a Demo</a>
         </div>
     )
 }
