@@ -29,7 +29,7 @@ const features = [
 
 export default function Overview() {
     return(
-        <div className="flex flex-col justify-center items-center py-20 gap-10 md:justify-between bg-[#111111] text-white">
+        <div className="flex flex-col justify-center items-center py-20 md:py-25 lg:py-30 gap-10 md:justify-between bg-[#111111] text-white">
           <div className="mx-auto max-w-7xl">
             <div className="flex flex-col justify-center items-center gap-4 text-center">
               <div className="rounded-[100px] p-0.5 bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
