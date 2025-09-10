@@ -44,7 +44,7 @@ export default function FAQs() {
                             <h6>{item.question}</h6>
                             <Plus className={`transition duration-300 ease-out ${open.has(item.question) ? 'rotate-45' : ''}`} />
                         </button>
-                        <p className={"transition-opacity duration-300 ease-out " + (open.has(item.question) ? "opacity-100 pb-6" : "opacity-0 pointer-events-none select-none h-0")}>
+                        <p className={(open.has(item.question) ? "pb-6" : "hidden")}>
                             {item.answer}
                         </p>
                     </div>
