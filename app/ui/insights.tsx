@@ -1,5 +1,7 @@
 "use client"
 
+import React, {useState} from 'react';
+
 import { 
   FireSimple,
   UsersThree,
@@ -10,7 +12,7 @@ import {
  } from "@phosphor-icons/react";
 
 const items = [
-  { icon: <FireSimple weight="duotone" size={24} color="#FF2F2F"/>, name: "Marketing", question: "Missing Out on Sales Opportunities?", title1: "AI-Powered Lead Management", description1: "Mocxha's AI automates lead nurturing and qualification, streamlining the sales process and maximizing conversion rates.", title2: "Enhanced Sales Visibility", description2: "Mocxha provides AI-driven sales forecasting and pipeline analysis, offering clear visibility to optimize sales strategies and drive revenue growth."},
+  { icon: <FireSimple weight="duotone" size={24} color="#FF2F2F" />, name: "Marketing", question: "Missing Out on Sales Opportunities?", title1: "AI-Powered Lead Management", description1: "Mocxha's AI automates lead nurturing and qualification, streamlining the sales process and maximizing conversion rates.", title2: "Enhanced Sales Visibility", description2: "Mocxha provides AI-driven sales forecasting and pipeline analysis, offering clear visibility to optimize sales strategies and drive revenue growth."},
   { icon: <UsersThree weight="duotone" size={24} color="#8A43E1"/>, name: "Management", question: "Overwhelmed by Operational Inefficiencies?", title1: "AI-Driven Workflow Automation", description1: "Mocxha automates routine tasks and workflows with AI, significantly reducing manual effort and increasing operational efficiency across departments.", title2: "Unified Data Insights", description2: "Mocxha provides AI-driven dashboards and reporting, delivering real-time insights from unified data to empower informed decision-making and streamline operations."},
   { icon: <Steps weight="duotone" size={24} color="#34A770"/>, name: "Sales", question: "Struggling with Disconnected Marketing Data?", title1: "AI-Enhanced Data Unification", description1: "Mocxha uses AI to unify marketing data, providing a comprehensive view of campaign performance and customer behavior for improved marketing strategies.", title2: "AI-Driven Actionable Analytics", description2: "Mocxha's AI-powered analytics deliver actionable insights, optimizing marketing ROI and addressing the challenges of data fragmentation."},
   { icon: <NavigationArrow weight="duotone" size={24} color="#D511FD"/>, name: "Projects", question: "Projects Falling Behind Schedule?", title1: "AI-Optimized Project Planning", description1: "Mocxha enhances project planning with AI-driven resource allocation, timeline optimization, and risk assessment for efficient project execution.", title2: "AI-Powered Collaboration", description2: "Mocxha facilitates seamless collaboration with AI-driven communication tools and workflow automation, ensuring projects stay on track and within budget."},
@@ -24,6 +26,11 @@ const features = [
   { description: "Security Measures & Compliance"},
 ]
 export default function Insights() {
+
+  const [active,setActive] = useState(1);
+  
+  const toggle = (i: number) => setActive(i);
+
     return(
         <div className="pt-5 pb-10 md:pt-10 md:pb-15 text-center">
           <div className="flex flex-col justify-center items-center pb-10">
@@ -35,32 +42,32 @@ export default function Insights() {
               How Our Integrated Platform Empowers Key Departments
             </h2>
           </div>
-          <div className="bg-white rounded-xl flex flex-col p-4 m-4">
-            <div className="flex flex-col lg:flex-row justify-between gap-2 pb-4">
+          <div className="bg-white rounded-xl md:flex-row lg:flex-col flex flex-col items-center p-4 m-4 gap-4 lg:gap-8">
+            <div className="grid grid-cols-1 lg:grid-cols-5 gap-1 w-full md:w-1/3 lg:w-full items-center ">
               {items.map((item, i) => (
-                <div key={i} className="lg:flex-1 pt-0.5 px-0.5 pb-0 rounded-xl bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]">
-                  <div className="items-center p-5 flex gap-2 rounded-lg justify-center bg-white">
-                    {item.icon}
-                    <h4>{item.name}</h4>
+                <button key={i} onClick={() => toggle(i)} className="group w-full button p-px rounded-md text-gray-500 focus:text-black  focus:bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)] ">
+                  <div className="flex rounded-md p-2 md:p-5 gap-4 items-center justify-center bg-[#F6F5F4] group-focus:bg-white ">
+                    <div>
+                      {item.icon}
+                    </div>
+                    <p>{item.name}</p>
                   </div>
-                </div>
+                </button>
               ))}
             </div>
-            {items.map((item, i) => (
-              <div key={i} className="flex flex-col lg:flex-row lg:px-12 py-12 justify-between gap-16">
-                <div className="flex flex-col gap-8 items-start">
-                  <h4>{item.question}</h4>
-                  <a href="#contact" className="btn btn-tertiary">Start 3-day free trial</a>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <h4>{item.title1}</h4>
-                  <p className="text-[#808080]">{item.description1}</p>
-                  <hr className="border-[#F1F0EE] my-8"/>
-                  <h4>{item.title1}</h4>
-                  <p className="text-[#808080]">{item.description1}</p>
-                </div>
+            <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16 text-start  w-full md:w-2/3 lg:w-full p-4 lg:pb-8 lg:px-12 ">
+              <div className="flex flex-col items-start gap-4 lg:w-1/3 w-full">
+                <h6 className="lg:h-10">{items[active].question}</h6>
+                <a href="#contact" className="btn btn-tertiary">Start 3-day free trial</a>
               </div>
-            ))}
+              <div className="flex flex-col gap-4 lg:w-2/3 w-full">
+                <h6>{items[active].title1}</h6>
+                <p className="text-[#808080] text-sm">{items[0].description1}</p>
+                <hr className="border-[#F1F0EE] "/>
+                <h6>{items[active].title2}</h6>
+                <p className="text-[#808080] text-sm">{items[0].description1}</p>
+              </div>
+            </div>
           </div>
           <div className="px-8 mt-8">
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
