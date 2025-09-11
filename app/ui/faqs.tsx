@@ -42,7 +42,9 @@ export default function FAQs() {
                         <hr className="border-t-[#E8E4E2]" />
                         <button className="flex justify-between items-center text-start w-full py-6" onClick={() => toggle(item.question)}>
                             <h6>{item.question}</h6>
-                            <Plus className={`transition duration-300 ease-out ${open.has(item.question) ? 'rotate-45' : ''}`} />
+                            <div>
+                                <Plus className={`transition duration-300 ease-out ${open.has(item.question) ? 'rotate-45' : ''}`} />
+                            </div>
                         </button>
                         <p className={(open.has(item.question) ? "pb-6" : "hidden")}>
                             {item.answer}
