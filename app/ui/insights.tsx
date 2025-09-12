@@ -45,27 +45,29 @@ export default function Insights() {
           <div className="bg-white rounded-xl md:flex-row lg:flex-col flex flex-col items-center p-4 m-4 gap-4 lg:gap-8">
             <div className="grid grid-cols-1 lg:grid-cols-5 gap-1 w-full md:w-1/3 lg:w-full items-center ">
               {items.map((item, i) => (
-                <button key={i} onClick={() => toggle(i)} className="group w-full button p-px rounded-md text-gray-500 focus:text-black  focus:bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)] ">
-                  <div className="flex rounded-md p-2 md:p-5 gap-4 items-center justify-center bg-[#F6F5F4] group-focus:bg-white ">
+                <div key={i} className="relative overflow-hidden">
+                <button key={i} onClick={() => toggle(i)} className={`w-full button p-px before:z-0 before:rounded-md before:content-[''] before:absolute before:inset-0 before:transition-opacity before:duration-400 before:ease-in-out before:bg-[linear-gradient(to_bottom,#FF2F2F_0%,#EF7B16_33%,#8A43E1_66%,#D511FD_100%)]` + ( items[i].title1 == items[active].title1 ? ` before:opacity-100 ` : ` before:opacity-0`) }>
+                  <div className={`relative z-0.5 flex rounded-md p-2 md:p-5 gap-4 items-center justify-center opacity-100 ` + ( items[i].title1 == items[active].title1 ? `  bg-white` : ` bg-[#F6F5F4]`)}>
                     <div>
                       {item.icon}
                     </div>
-                    <p>{item.name}</p>
+                    <p className={`transition-colors duration-400` + ( items[i].title1 == items[active].title1 ? ` text-black` : ` text-gray-500  `)}>{item.name}</p>
                   </div>
                 </button>
+                </div>
               ))}
             </div>
             <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16 text-start  w-full md:w-2/3 lg:w-full p-4 lg:pb-8 lg:px-12 ">
               <div className="flex flex-col items-start gap-4 lg:w-1/3 w-full">
-                <h6 className="lg:h-10">{items[active].question}</h6>
+                <h6 className="lg:h-10 h-8">{items[active].question}</h6>
                 <a href="#contact" className="btn btn-tertiary">Start 3-day free trial</a>
               </div>
               <div className="flex flex-col gap-4 lg:w-2/3 w-full">
                 <h6>{items[active].title1}</h6>
-                <p className="text-[#808080] text-sm">{items[0].description1}</p>
+                <p className="text-[#808080] text-sm">{items[active].description1}</p>
                 <hr className="border-[#F1F0EE] "/>
                 <h6>{items[active].title2}</h6>
-                <p className="text-[#808080] text-sm">{items[0].description1}</p>
+                <p className="text-[#808080] text-sm">{items[active].description2}</p>
               </div>
             </div>
           </div>
