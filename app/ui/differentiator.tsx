@@ -55,18 +55,20 @@ export default function Differentiator() {
                 {item.icon}
                 <p className="font-bold">{item.name}</p>
               </div>
-              <div className="flex flex-col lg:flex-row items-center justify-between pl-8 pt-8 gap-4">
+              <div className="flex flex-col lg:flex-row items-start text-start justify-between pl-8 pt-8 gap-5">
                 <div className="flex flex-col gap-4 pt-4 pr-8">
                   <h4>{item.title}</h4>
-                  <p className="text-[#4C4C4C] text-sm md:text-lg">{item.description}</p>
+                  <p className="text-[#4C4C4C] text-sm md:text-lg ">{item.description}</p>
                 </div>
-                <Image
-                  alt="TBD"
-                  src={item.source}
-                  width={500} 
-                  height={500}
-                  className="object-contain"
-                />
+                <div className="w-full flex items-end justify-end">
+                  <Image
+                    alt="TBD"
+                    src={item.source}
+                    width={500} 
+                    height={500}
+                    className="object-contain"
+                  />
+                </div>
               </div>
             </button>
           ))}
