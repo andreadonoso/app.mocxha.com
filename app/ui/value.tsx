@@ -27,7 +27,7 @@ export default function ValueProposition() {
           <div className="z-0 relative overflow-hidden h-50 [mask-image:_linear-gradient(to_bottom,transparent_0,_black_100px,_black_calc(100%-128px),transparent_100%)]">
             <div className="animate-infinite-scroll flex flex-col gap-4">
                 {[...items, ...items].map((item, i) => (
-                  <h2 key={i} className=" whitespace-nowrap">
+                  <h2 key={i} className="select-none whitespace-nowrap">
                     <span  className="text-transparent bg-clip-text z-50  h-10 w-fit bg-gradient-to-r from-[#e62e2e] via-[#ef7718] via-[#75239e] to-[#f700ff] font-bold">
                       {item.description}
                     </span>

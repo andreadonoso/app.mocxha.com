@@ -76,7 +76,7 @@ export default function Overview() {
                 <Marquee
                   autoFill
                   pauseOnClick
-                  className="[contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_132px,_black_calc(100%-132px),transparent_100%)]"
+                  className="select-none [contain:inline-size] [mask-image:_linear-gradient(to_right,transparent_0,_black_132px,_black_calc(100%-132px),transparent_100%)]"
                 >
                   {features.map((item, i) => (
                     <div key={i} className="flex items-center justify-center m-2 p-4 rounded-lg bg-[#1e1e1e] text-white" >
