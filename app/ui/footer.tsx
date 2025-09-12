@@ -109,7 +109,7 @@ export default function Footer() {
                                     { socialLinks.map((item) => (
                                         <a 
                                             key={item.name}
-                                            className="flex items-center gap-2 hover:text-white text-[#808080]  justify-start font-medium rounded-lg text-sm px-4 py-2 bg-[#1E1E1E] transition delay-1 duration-300 ease-in-out active:scale-95"
+                                            className="flex items-center gap-2 hover:text-white text-[#808080]  justify-start font-medium rounded-lg text-sm px-4 py-2 bg-[#1E1E1E] transition delay-1 duration-300 ease-in-out active:scale-95 select-none"
                                             href={item.address}
                                             target="_blank"
                                             rel="noopener noreferrer"

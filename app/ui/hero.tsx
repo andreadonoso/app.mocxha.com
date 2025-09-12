@@ -63,7 +63,7 @@ export default function Hero() {
                     src={logo.source}
                     width={120} 
                     height={30}
-                    className="object-contain w-auto h-[30px] max-w-none"
+                    className="object-contain w-auto h-[30px] max-w-none select-none"
                   />
                 </div>
               )) }

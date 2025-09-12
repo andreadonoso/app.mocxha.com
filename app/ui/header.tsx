@@ -55,7 +55,7 @@ export default function Header() {
                 visible ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0",
             ].join(" ")}
         >
-            <nav aria-label="Global" className={`flex items-center justify-between px-6 xl:mx-4 xl:py-2 xl:px-3 py-6 xl:bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 xl:rounded-lg `}>
+            <nav aria-label="Global" className={`select-none flex items-center justify-between px-6 xl:mx-4 xl:py-2 xl:px-3 py-6 xl:bg-white/80 backdrop-blur supports-[backdrop-filter]:bg-white/60 xl:rounded-lg `}>
                 <div className="flex xl:flex-1">
                     <a href="#" className="-m-1.5 p-1.5">
                         <span className="sr-only">Mocxha</span>
@@ -95,7 +95,7 @@ export default function Header() {
                                 <MenuItem >
                                     <a 
                                     href="#contact" 
-                                    className="block mt-1 text-center w-full rounded-md bg-[#000000] px-3.5 py-2.5 text-sm font-semibold text-white shadow-xs hover:bg-[#3D3D3D] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+                                    className="btn btn-primary mt-1 text-center w-full"
                                     >
                                         Request access
                                     </a>

@@ -27,7 +27,7 @@ const features = [
 ]
 export default function Insights() {
 
-  const [active,setActive] = useState(1);
+  const [active,setActive] = useState(0);
   
   const toggle = (i: number) => setActive(i);
 
@@ -58,16 +58,16 @@ export default function Insights() {
               ))}
             </div>
             <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16 text-start  w-full md:w-2/3 lg:w-full p-4 lg:pb-8 lg:px-12 ">
-              <div className="flex flex-col items-start gap-4 lg:w-1/3 w-full">
+              <div className="flex flex-col items-start gap-2 lg:w-1/3 w-full">
                 <h6 className="lg:h-10 h-8">{items[active].question}</h6>
                 <a href="#contact" className="btn btn-tertiary">Start 3-day free trial</a>
               </div>
-              <div className="flex flex-col gap-4 lg:w-2/3 w-full">
+              <div className="flex flex-col gap-3 lg:w-2/3 w-full">
                 <h6>{items[active].title1}</h6>
-                <p className="text-[#808080] text-sm">{items[active].description1}</p>
+                <p className="text-[#808080] text-sm md:h-15">{items[active].description1}</p>
                 <hr className="border-[#F1F0EE] "/>
                 <h6>{items[active].title2}</h6>
-                <p className="text-[#808080] text-sm">{items[active].description2}</p>
+                <p className="text-[#808080] text-sm md:h-15">{items[active].description2}</p>
               </div>
             </div>
           </div>
