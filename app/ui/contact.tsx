@@ -30,7 +30,7 @@ export default function Contact() {
             </div>
           </div>
           <div >
-            <Cal calLink="mocxha" config={{ theme: "dark", layout: "mobile_friendly"}} />
+            <Cal calLink="mocxha" config={{ theme: "dark"}} />
           </div>
         </div>
     )
