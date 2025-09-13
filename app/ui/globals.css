@@ -117,4 +117,30 @@ body{
     @apply flex items-center justify-center bg-linear-to-t from-transparent to-white
   }
 
+  /* CAL.COM WIDGET FIXES */
+  .cal-inline-container {
+    min-height: auto !important;
+  }
+
+/* Additional mobile-specific fixes */
+@media (max-width: 640px) {
+  .cal-inline-container {
+    min-height: 500px !important;
+    max-height: 600px !important;
+  }
+  
+  .cal-inline-container iframe.cal-embed {
+    height: auto !important;
+    min-height: 500px !important;
+    max-height: 600px !important;
+  }
+}
+
+/* For tablets */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .cal-inline-container {
+    min-height: 600px !important;
+  }
+}
+
 } 
