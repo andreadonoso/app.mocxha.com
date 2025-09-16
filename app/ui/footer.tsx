@@ -5,7 +5,7 @@ import { Envelope,
         ArrowRight, 
         LinkedinLogo, 
         XLogo,
-    InstagramLogo
+    YoutubeLogo 
  } from "@phosphor-icons/react";
 
  const homeLinks = [
@@ -23,9 +23,8 @@ const pagesLinks = [
 ]
 
 const socialLinks = [
-    { name: "Linkedin", icon: <LinkedinLogo size={24} weight="duotone"/>, address: "#" },
-    { name: "Twittter / X", icon: <XLogo size={24} weight="duotone"/>, address: "#" },
-    { name: "Instagram", icon: <InstagramLogo size={24} weight="duotone"/>, address: "#" },
+    { name: "Linkedin", icon: <LinkedinLogo size={24} weight="duotone"/>, address: "https://www.linkedin.com/company/mocxha/about/" },
+    { name: "YouTube", icon: <YoutubeLogo  size={24} weight="duotone"/>, address: "https://www.youtube.com/@MocxhaAI" },
 ]
 
 
