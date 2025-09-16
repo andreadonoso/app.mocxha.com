@@ -79,7 +79,7 @@ export default function Header() {
                             modal={false}
                             transition
                             anchor="bottom end"
-                            className="border border-[#000000]/10 w-60 p-3 mt-4 origin-top-right rounded-xl bg-white text-md text-bold text-black transition duration-200 ease-out [--anchor-gap:--spacing(1)] focus:outline-none data-closed:scale-95 data-closed:opacity-0"
+                            className="z-[9999] border border-[#000000]/10 w-60 p-3 mt-4 origin-top-right rounded-xl bg-white text-md text-bold text-black transition duration-200 ease-out [--anchor-gap:--spacing(1)] focus:outline-none data-closed:scale-95 data-closed:opacity-0"
                             >
                                 {navigation.map((item) => (
                                     <MenuItem key={item.name}>

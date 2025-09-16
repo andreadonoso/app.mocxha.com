@@ -34,9 +34,9 @@ export default function Differentiator() {
       <div className="flex flex-col items-center justify-center py-15 md:py-20 ">
         <div className="flex flex-col items-center justify-center gap-4 text-center pb-8">
           <p className="pill">Unique Features</p>
-          <h2>Unleash Taskforge's Unique Potential for you</h2>
+          <h2>Unleash Mocxha's Unique Potential for you</h2>
           <p className="text-[#3D3D3D]">
-            Discover Taskforge’s powerful and unique tools that set it apart, offering unmatched efficiency, customization, and collaboration.
+            Discover Mocxha’s powerful and unique tools that set it apart, offering unmatched efficiency, customization, and collaboration.
           </p>
         </div>
         <div className="md:px-16 relative w-full h-[800px] lg:h-[700px]">

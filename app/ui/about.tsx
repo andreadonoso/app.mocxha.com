@@ -35,12 +35,12 @@ export default function About() {
             </div>
             <div className="w-full flex justify-center items-center">
               <iframe
-                  src="https://www.youtube.com/embed/Y8EVadQqJaY"
+                  src="https://www.youtube.com/embed/ChCVkytcKgQ"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
-                  className="w-full h-60"
+                  className="w-full h-60 [clip-path:inset(0_10px_0_10px)]"
                 />
             </div>
           </div>

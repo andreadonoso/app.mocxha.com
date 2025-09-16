@@ -157,12 +157,7 @@ export default function Plans() {
             </a>
           </div>
           <div  className="flex items-center gap-4">
-            <div  className="flex items-center">
-              <CalendarDot/>
-              <p>Free 3 days trial</p>
-            </div>
-            <div className="dot"></div>
-            <div  className="flex items-center">
+            <div  className="flex items-center gap-2">
               <Database/>
               <p>Data migration</p>
             </div>
