@@ -60,7 +60,7 @@ export default function Insights() {
             <div className="flex flex-col lg:flex-row justify-between gap-8 lg:gap-16 text-start  w-full md:w-2/3 lg:w-full p-4 lg:pb-8 lg:px-12 ">
               <div className="flex flex-col items-start gap-2 lg:w-1/3 w-full">
                 <h6 className="lg:h-10 h-8">{items[active].question}</h6>
-                <a href="#contact" className="btn btn-tertiary">Start 3-day free trial</a>
+                <a href="#meet" className="btn btn-tertiary">Request access</a>
               </div>
               <div className="flex flex-col gap-3 lg:w-2/3 w-full">
                 <h6>{items[active].title1}</h6>

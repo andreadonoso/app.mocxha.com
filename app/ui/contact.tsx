@@ -31,8 +31,8 @@ export default function Contact() {
               ))}
             </div>
           </div>
-          <div >
-            <Cal calLink="mocxha" config={{ theme: "dark"}} />
+          <div id="meet">
+            <Cal  calLink="mocxha" config={{ theme: "dark"}} />
           </div>
         </div>
     )

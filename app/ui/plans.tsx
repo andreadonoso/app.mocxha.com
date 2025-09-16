@@ -85,9 +85,9 @@ export default function Plans() {
                   />
                 <h6>Basic</h6>
                 <p className="h-15 ">Best for personal use </p>
-                <button  className="btn btn-primary">
+                <a href="#meet"  className="btn btn-primary">
                   Early Access
-                </button>
+                </a>
               </div>
                 <div className="px-4 mt-4">
                   {contentBasic.map((item, i) => (
@@ -109,9 +109,9 @@ export default function Plans() {
                   />
                   <h6>Pro</h6>
                   <p className="h-15 ">Best for small to mid-sized teams</p>
-                  <button  className="btn btn-primary">
+                  <a  href="#meet" className="btn btn-primary">
                     Early Access
-                  </button>
+                  </a>
                 </div>
                 <div className="px-4 mt-4">
                   {contentPro.map((item, i) => (
@@ -134,9 +134,9 @@ export default function Plans() {
                 <h6>Enterprise</h6>
                 <p className="h-15 ">Get a custom demo and see how Mocxha aligns with your goals.</p>
                 <p></p>
-                <button  className="btn btn-primary">
+                <a  href="#meet"  className="btn btn-primary">
                   Early Access
-                </button>
+                </a>
               </div>
               <div className="px-4 mt-4">
                 {contentEnterprise.map((item, i) => (

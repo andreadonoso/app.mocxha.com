@@ -94,7 +94,7 @@ export default function Header() {
                                 ))}
                                 <MenuItem >
                                     <a 
-                                    href="#contact" 
+                                    href="#meet" 
                                     className="btn btn-primary mt-1 text-center w-full"
                                     >
                                         Request access
@@ -113,7 +113,7 @@ export default function Header() {
                     ))}
                 </div>
                 <div className="hidden xl:flex xl:flex-1 xl:justify-end  xl:gap-x-2">
-                    <a href="#contact" className="btn btn-primary">
+                    <a href="#meet" className="btn btn-primary">
                     Request access
                     </a>
                 </div>
