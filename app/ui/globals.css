@@ -1,18 +1,22 @@
 @import "tailwindcss";
 
-:root{
+:root {
   /* Stripes get wider as the viewport grows */
   --stripe-w: clamp(10px, 1.2vw, 28px);
-  --stripe-alpha: .10;
+  --stripe-alpha: 0.1;
 }
 
-body{
-    background-color:#f4f2f1;
+body {
+  background-color: #f4f2f1;
 }
 
 @keyframes infinite-scroll {
-  0%   { transform: translateY(-50%) }
-  100% { transform: translateY(0) }
+  0% {
+    transform: translateY(-50%);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @theme {
@@ -20,8 +24,9 @@ body{
   --color-foreground: var(--foreground);
   --font-sans: var(--font-inter);
   --font-heading: var(--font-switzer);
-  --animate-infinite-scroll: infinite-scroll var(--infinite-scroll, 8s) linear infinite;
-} 
+  --animate-infinite-scroll: infinite-scroll var(--infinite-scroll, 8s) linear
+    infinite;
+}
 
 @layer base {
   body {
@@ -33,9 +38,14 @@ body{
     color: var(--foreground);
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     @apply font-heading font-bold;
-    @apply m-0 leading-none p-0; 
+    @apply m-0 leading-none p-0;
   }
 
   h1 {
@@ -47,7 +57,7 @@ body{
   }
 
   h4 {
-    @apply text-2xl ;
+    @apply text-2xl;
   }
 
   h5 {
@@ -56,22 +66,21 @@ body{
 }
 
 @layer components {
-
   .section {
     @apply mx-auto max-w-7xl px-4 md:px-6 lg:px-8;
   }
 
   .pill {
     @apply inline-flex w-fit rounded-[100px] px-3 py-2 my-5 bg-white;
-    border: 1px solid rgba(222, 216, 211, 0.30);
-    box-shadow: 0 1px 1px rgba(0,0,0,0.10);
+    border: 1px solid rgba(222, 216, 211, 0.3);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
   }
 
   .pill-hero {
     @apply border bg-[#ffffff]/20 border-[#DED8D3] rounded-[100] px-3 py-1 mt-10;
   }
 
-  .button{
+  .button {
     @apply cursor-pointer;
   }
 
@@ -86,35 +95,35 @@ body{
   }
 
   .btn-primary {
-    @apply text-white  bg-black hover:bg-[#3D3D3D] transition delay-1 duration-300 ease-in-out active:scale-95
+    @apply text-white  bg-black hover:bg-[#3D3D3D] transition delay-1 duration-300 ease-in-out active:scale-95;
   }
 
-   .btn-secondary {
-    @apply text-black  bg-white hover:bg-[#DED8D3] transition delay-1 duration-300 ease-in-out active:scale-95
+  .btn-secondary {
+    @apply text-black  bg-white hover:bg-[#DED8D3] transition delay-1 duration-300 ease-in-out active:scale-95;
   }
 
   .btn-tertiary {
-    @apply text-black  bg-transparent border transition delay-1 duration-300 ease-in-out active:scale-95
+    @apply text-black  bg-transparent border transition delay-1 duration-300 ease-in-out active:scale-95;
   }
 
   .card-white {
-    @apply p-4 border rounded-3xl  bg-white h-60 flex flex-col justify-between border-black/5
+    @apply p-4 border rounded-3xl  bg-white h-60 flex flex-col justify-between border-black/5;
   }
 
   .card-body {
-    @apply pb-4 w-full border border-[#dcdbd4] rounded-3xl bg-[#E8E4E2]
+    @apply pb-4 w-full border border-[#dcdbd4] rounded-3xl bg-[#E8E4E2];
   }
 
   .dot {
-    @apply w-1 h-1 rounded-full bg-[#DED8D3]
+    @apply w-1 h-1 rounded-full bg-[#DED8D3];
   }
 
   .black-gradient {
-    @apply flex items-center justify-center bg-linear-to-t from-black to-[#7c7c7c]
+    @apply flex items-center justify-center bg-linear-to-t from-black to-[#7c7c7c];
   }
 
   .white-gradient {
-    @apply flex items-center justify-center bg-linear-to-t from-transparent to-white
+    @apply flex items-center justify-center bg-linear-to-t from-transparent to-white;
   }
 
   /* CAL.COM WIDGET FIXES */
@@ -122,25 +131,24 @@ body{
     min-height: auto !important;
   }
 
-/* Additional mobile-specific fixes */
-@media (max-width: 640px) {
-  .cal-inline-container {
-    min-height: 500px !important;
-    max-height: 600px !important;
+  /* Additional mobile-specific fixes */
+  @media (max-width: 640px) {
+    .cal-inline-container {
+      min-height: 500px !important;
+      max-height: 600px !important;
+    }
+
+    .cal-inline-container iframe.cal-embed {
+      height: auto !important;
+      min-height: 500px !important;
+      max-height: 600px !important;
+    }
   }
-  
-  .cal-inline-container iframe.cal-embed {
-    height: auto !important;
-    min-height: 500px !important;
-    max-height: 600px !important;
+
+  /* For tablets */
+  @media (min-width: 641px) and (max-width: 1024px) {
+    .cal-inline-container {
+      min-height: 600px !important;
+    }
   }
 }
-
-/* For tablets */
-@media (min-width: 641px) and (max-width: 1024px) {
-  .cal-inline-container {
-    min-height: 600px !important;
-  }
-}
-
-} 
